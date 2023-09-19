@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
@@ -13,7 +11,9 @@ const Header: FC<IPropsTypes> = (props) => {
     <header className="header">
       <div>
         <section>
-          <Image src="/images/logo.svg" alt="logo" width="138" height="45" />
+          <Link href={'/'}>
+            <Image src="/images/logo.svg" alt="logo" width="138" height="45" />
+          </Link>
           <a href="tel:+48123456789">+48 123-123-123</a>
         </section>
         <nav>
@@ -40,7 +40,7 @@ const Header: FC<IPropsTypes> = (props) => {
               <Link href={'/'}>O Nas</Link>
             </li>
             <li>
-              <Link href={'/'}>Kontact</Link>
+              <Link href={'/'}>Kontakt</Link>
             </li>
           </ul>
         </nav>

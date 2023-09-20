@@ -1,6 +1,9 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
+import Sidebar from './Sidebar';
 
 interface IPropsTypes {
   name?: string;
@@ -8,7 +11,7 @@ interface IPropsTypes {
 
 const Header: FC<IPropsTypes> = (props) => {
   return (
-    <header className="header">
+    <header className="header" id="page-wrap">
       <div>
         <section>
           <Link href={'/'}>
@@ -40,10 +43,13 @@ const Header: FC<IPropsTypes> = (props) => {
               <Link href={'/'}>O Nas</Link>
             </li>
             <li>
-              <Link href={'/'}>Kontakt</Link>
+              <Link href={'/'} className="btn">
+                Kontakt
+              </Link>
             </li>
           </ul>
         </nav>
+        <Sidebar pageWrapId={'page-wrap'} outerContainerId={'App'} right isOpen={true} />
       </div>
     </header>
   );

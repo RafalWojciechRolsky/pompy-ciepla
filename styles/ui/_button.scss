@@ -1,0 +1,19 @@
+.btn {
+  background-color: $warning-500;
+  color: $primary-50;
+  border-radius: $radius-xs;
+  box-shadow: $shadow;
+  transition:
+    background-color 0.3s ease-in-out,
+    transform 0.1s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+
+  &:hover {
+    background-color: $warning-600;
+  }
+
+  &:active {
+    transform: scale(0.9);
+    box-shadow: none;
+  }
+}

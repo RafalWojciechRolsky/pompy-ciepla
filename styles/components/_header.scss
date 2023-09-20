@@ -20,6 +20,11 @@
         margin-left: 2rem;
         font-weight: 500;
         font-size: 1.5rem;
+        transition: all .2s ease-in;
+
+        &:hover {
+          color: $third-400;
+        }
       }
     }
 
@@ -33,6 +38,14 @@
       display: flex;
       flex-direction: row;
 
+      li:not(:last-child) a {
+        transition: all .2s ease-out;
+
+        &:hover {
+          color: $third-400;
+          text-decoration: underline;
+        }
+      }
 
       a {
         font-weight: 500;
@@ -40,8 +53,5 @@
         font-size: 1.5rem;
       }
     }
-
   }
-
-
 }

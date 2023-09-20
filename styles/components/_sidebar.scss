@@ -1,0 +1,21 @@
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: $third-500;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}

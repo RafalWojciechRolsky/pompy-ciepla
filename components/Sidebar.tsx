@@ -1,39 +1,25 @@
-import Link from 'next/link';
-import React from 'react';
+'use client';
+
+import { FC } from 'react';
+
 import { slide as Menu } from 'react-burger-menu';
 
-// rome-ignore lint/suspicious/noExplicitAny: <explanation>
-const Sidebar = (props: any) => {
+interface IPropsTypes {
+  name?: string;
+}
+
+const Sidebar: FC<IPropsTypes> = () => {
   return (
-    <Menu {...props}>
-      <nav>
-        <ul id="sidebar">
-          <li>
-            <Link href={'/'}>Home</Link>
-          </li>
-          <li>
-            <Link href={'/'}>Pompy Ciepła</Link>
-          </li>
-          <li>
-            <Link href={'/'}>Klimatyzatory</Link>
-          </li>
-          <li>
-            <Link href={'/'}>Producenci</Link>
-          </li>
-          <li>
-            <Link href={'/'}>Realizacje</Link>
-          </li>
-          <li>
-            <Link href={'/'}>Oferta</Link>
-          </li>
-          <li>
-            <Link href={'/'}>O Nas</Link>
-          </li>
-          <li>
-            <Link href={'/'}>Kontakt</Link>
-          </li>
-        </ul>
-      </nav>
+    <Menu pageWrapId={'page-wrap'} outerContainerId={'outer-container'} right>
+      <a id="home" className="menu-item" href="/">
+        Home
+      </a>
+      <a id="about" className="menu-item" href="/about">
+        About
+      </a>
+      <a id="contact" className="menu-item" href="/contact">
+        Contact
+      </a>
     </Menu>
   );
 };

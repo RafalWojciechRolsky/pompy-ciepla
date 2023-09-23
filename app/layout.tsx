@@ -2,6 +2,11 @@ import Header from '@/components/Header';
 import '../styles/main.scss';
 import type { Metadata } from 'next';
 import { Ubuntu } from 'next/font/google';
+import Sidebar from '@/components/Sidebar';
+import Footer from '@/components/Footer';
+import Hero from '@/components/Hero';
+import Logos from '@/components/Logos';
+import FormContact from '@/components/FormContact';
 
 const ubuntu = Ubuntu({ weight: ['300', '400', '500', '700'], subsets: ['latin-ext'] });
 
@@ -17,10 +22,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={ubuntu.className} id="App">
+      <body className={ubuntu.className} id="outer-container">
         <Header />
-
-        {children}
+        <Hero />
+        <Logos />
+        <main id="page-wrap">{children}</main>
+        <FormContact />
+        <Footer />
       </body>
     </html>
   );

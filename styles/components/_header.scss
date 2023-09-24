@@ -1,8 +1,10 @@
 @import '../abstracts/variables';
 
 .header {
+  // position: fixed;
   display: flex;
   justify-content: center;
+  height: 7rem;
 
   &>div {
     width: $globalWidth-1920;
@@ -16,6 +18,16 @@
       justify-content: space-between;
       align-items: center;
 
+      a.phone {
+        @media screen and (max-width: $breakpoint-1200) {
+          font-size: 2rem;
+        }
+
+        @media screen and (max-width: $breakpoint-500) {
+          display: none;
+        }
+      }
+
       a {
         margin-left: 2rem;
         font-weight: 500;
@@ -25,31 +37,44 @@
         &:hover {
           color: $third-400;
         }
+
+
       }
     }
 
     nav {
-      height: 7rem;
+
       display: flex;
       align-items: center;
+
+      @media screen and (max-width: $breakpoint-1200) {
+        display: none;
+      }
+
     }
+
+
 
     nav ul {
       display: flex;
       flex-direction: row;
+      margin-right: 1rem;
+      height: 7rem;
 
-      li:not(:last-child) a {
-        transition: all .2s ease-out;
+      li {
+        display: flex;
+        align-items: center;
+        height: 7rem;
+        transition: all .2s ease-in;
 
         &:hover {
-          color: $third-400;
-          text-decoration: underline;
+          background-color: $primary-500;
         }
       }
 
       a {
         font-weight: 500;
-        padding: 10px 10px;
+        padding: 1rem 1rem;
         font-size: 1.5rem;
       }
     }

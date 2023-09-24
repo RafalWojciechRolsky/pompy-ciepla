@@ -6,7 +6,7 @@ interface IPropsTypes {
 
 const Hero: FC<IPropsTypes> = (props) => {
   return (
-    <div className="">
+    <div className="hero">
       <h1>Hero</h1>
     </div>
   );

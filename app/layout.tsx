@@ -26,11 +26,7 @@ export default function RootLayout({
         <Sidebar />
         <div id="page-wrap">
           <Header />
-          <Hero />
-          <Logos />
           <main>{children}</main>
-          <FormContact />
-          <Footer />
         </div>
       </body>
     </html>

@@ -3,6 +3,7 @@
 body {
   font-family: Ubuntu, sans-serif;
   background-color: $primary-400;
+  color: $third-300;
 }
 
 h1,
@@ -11,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $third-500;
+  color: $third-400;
   font-weight: 600;
   padding: 0;
 }
@@ -26,8 +27,8 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  color: $third-500;
-  font-size: 1.9rem;
+  color: $third-400;
+  font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
 }
@@ -38,8 +39,13 @@ body {
 
 h1 {
   font-size: 7.629rem;
-  letter-spacing: -.5rem;
+  letter-spacing: -.3rem;
   font-weight: 700;
+
+  span {
+    letter-spacing: inherit;
+    padding: 0 1.8rem 0 0;
+  }
 }
 
 h2 {
@@ -71,7 +77,7 @@ p {
   font-size: 2rem;
   line-height: 2.5rem;
   font-weight: 200;
-  color: $third-400;
+  color: $third-300;
 }
 
 li {
@@ -79,7 +85,12 @@ li {
   padding: 0.5rem 0;
   padding: 0;
   list-style-type: none;
-  color: $third-400;
+  color: $third-300;
+}
+
+span {
+  color: $third-300;
+  padding: 0 1.2rem 0 0;
 }
 
 ol,

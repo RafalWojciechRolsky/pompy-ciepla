@@ -37,8 +37,8 @@ const Hero: FC<IPropsTypes> = () => {
               className="heroImage"
               alt=""
               src="/images/Image-01.png"
-              layout="fill"
-              objectFit="cover"
+              width={500}
+              height={500}
             />
           </div>
         </figure>

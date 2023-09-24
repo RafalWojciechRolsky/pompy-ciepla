@@ -1,16 +1,33 @@
 'use client';
 
 import Link from 'next/link';
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 import Logo from '../Logo';
 
 interface IPropsTypes {
   name?: string;
 }
 
-const Header: FC<IPropsTypes> = (props) => {
+const Header: FC<IPropsTypes> = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      if (isScrolled !== scrolled) {
+        setScrolled(!scrolled);
+      }
+    };
+
+    document.addEventListener('scroll', handleScroll);
+
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
+
   return (
-    <header className="header">
+    <header className={scrolled ? 'header scrolled' : 'header'}>
       <div>
         <Logo />
         <nav>

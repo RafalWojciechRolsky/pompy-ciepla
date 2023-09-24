@@ -9,6 +9,11 @@
   width: 100%;
   z-index: 1;
 
+  &.scrolled {
+    background-color: $primary-500;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.055);
+  }
+
   &>div {
     width: $globalWidth-1920;
     display: flex;
@@ -47,23 +52,17 @@
         &:hover {
           color: $third-400;
         }
-
-
       }
     }
 
     nav {
-
       display: flex;
       align-items: center;
 
       @media screen and (max-width: $breakpoint-1200) {
         display: none;
       }
-
     }
-
-
 
     nav ul {
       display: flex;

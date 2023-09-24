@@ -3,9 +3,6 @@ import '../styles/main.scss';
 import type { Metadata } from 'next';
 import { Ubuntu } from 'next/font/google';
 import Footer from '@/components/Footer';
-import Hero from '@/components/Hero';
-import Logos from '@/components/Logos';
-import FormContact from '@/components/FormContact';
 import Sidebar from '@/components/Header/Sidebar';
 
 const ubuntu = Ubuntu({ weight: ['300', '400', '500', '700'], subsets: ['latin-ext'] });
@@ -26,6 +23,7 @@ export default function RootLayout({
         <Sidebar />
         <div id="page-wrap">
           <Header />
+
           <main>{children}</main>
           <Footer />
         </div>

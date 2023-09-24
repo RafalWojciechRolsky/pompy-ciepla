@@ -19,4 +19,17 @@
     transform: scale(0.9);
     box-shadow: none;
   }
+
+  &--hero {
+    font-size: 2rem;
+
+    @media screen and (max-width: $breakpoint-1200) {
+      font-size: 1.7rem;
+    }
+
+    @media screen and (max-width: $breakpoint-960) {
+      font-size: 1.6rem;
+    }
+  }
+
 }

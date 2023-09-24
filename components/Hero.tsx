@@ -27,7 +27,7 @@ const Hero: FC<IPropsTypes> = () => {
               </li>
             </ul>
           </div>
-          <a href="/" className="btn">
+          <a href="/" className="btn btn--hero">
             Napisz do nas
           </a>
         </div>

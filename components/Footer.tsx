@@ -1,4 +1,7 @@
 import { FC } from 'react';
+import Logo from './Logo';
+import Link from 'next/link';
+import { FaFacebookSquare, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 interface IPropsTypes {
   name?: string;
@@ -6,9 +9,33 @@ interface IPropsTypes {
 
 const Footer: FC<IPropsTypes> = (props) => {
   return (
-    <div className="">
-      <h1>Footer</h1>
-    </div>
+    <footer className="footer">
+      <div className="footer--container">
+        <Logo phone={false} />
+        <nav>
+          <Link href="/" className="regulamin">
+            Regulamin
+          </Link>
+          <Link href="/" className="regulamin">
+            Polityka Prywatności
+          </Link>
+          <Link href="/" className="regulamin">
+            Ustawienia Cookies
+          </Link>
+        </nav>
+        <div className="socials">
+          <Link href="/">
+            <FaInstagram className="social-icons" />
+          </Link>
+          <Link href="/">
+            <FaFacebookSquare className="social-icons" />
+          </Link>
+          <Link href="/">
+            <FaLinkedin className="social-icons" />
+          </Link>
+        </div>
+      </div>
+    </footer>
   );
 };
 

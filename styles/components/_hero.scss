@@ -1,21 +1,16 @@
 @import '../abstracts/variables';
 
-section.hero {
+.hero {
   display: flex;
   justify-content: center;
 
-  .heroContainer {
+  &--container {
     display: flex;
     align-items: center;
     max-width: $globalWidth-1920;
     padding: 20rem 0 10rem 0;
     gap: 4rem;
     width: 80%;
-
-
-    .imageContainer {
-      width: 100%;
-    }
 
     @media screen and (max-width: $breakpoint-1440) {
       h1 {
@@ -53,7 +48,7 @@ section.hero {
       }
 
 
-      .imageContainer {
+      .hero--imageContainer {
         width: 70%;
       }
     }
@@ -72,7 +67,7 @@ section.hero {
         line-height: 2rem;
       }
 
-      .imageContainer {
+      .hero--imageContainer {
         width: 90%;
       }
     }
@@ -91,7 +86,7 @@ section.hero {
     }
   }
 
-  .heroLeft {
+  &--left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -146,19 +141,19 @@ section.hero {
     }
   }
 
-  .imageContainer {
+  &--imageContainer {
     position: relative;
-    width: 90%;
+    width: 100%;
     overflow: hidden;
     filter: drop-shadow($shadow);
 
-    .aspectRatioKeeper {
+    figure {
       position: relative;
       width: 100%;
       padding-top: 100%;
       overflow: hidden;
 
-      img.heroImage {
+      img {
         border-radius: 50%;
         position: absolute;
         top: 0;

@@ -8,9 +8,9 @@ interface IPropsTypes {
 const Hero: FC<IPropsTypes> = () => {
   return (
     <section className="hero">
-      <div className="heroContainer">
-        <div className="heroLeft">
-          <div className="heroText">
+      <div className="hero--container">
+        <div className="hero--left">
+          <div className="text">
             <h1>
               <span>Pompy Ciepła</span>
               to ogrzewanie energią ze środowiska
@@ -31,17 +31,11 @@ const Hero: FC<IPropsTypes> = () => {
             Napisz do nas
           </a>
         </div>
-        <figure className="imageContainer">
-          <div className="aspectRatioKeeper">
-            <Image
-              className="heroImage"
-              alt=""
-              src="/images/Image-01.png"
-              width={500}
-              height={500}
-            />
-          </div>
-        </figure>
+        <div className="hero--imageContainer">
+          <figure>
+            <Image alt="hero Image" src="/images/Image-01.png" width={500} height={500} />
+          </figure>
+        </div>
       </div>
     </section>
   );

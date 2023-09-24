@@ -27,6 +27,7 @@ export default function RootLayout({
         <div id="page-wrap">
           <Header />
           <main>{children}</main>
+          <Footer />
         </div>
       </body>
     </html>

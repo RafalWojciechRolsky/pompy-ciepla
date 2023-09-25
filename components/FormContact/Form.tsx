@@ -6,8 +6,10 @@ interface IPropsTypes {
 
 const Form: FC<IPropsTypes> = (props) => {
   return (
-    <form>
-      <input type="text" placeholder="Name" />
+    <form className="form">
+      <label htmlFor="name">
+        <input type="text" placeholder="Imię" id="name" />
+      </label>
       <input type="text" placeholder="Email" />
       <input type="text" placeholder="Phone" />
       <input type="text" placeholder="Subject" />

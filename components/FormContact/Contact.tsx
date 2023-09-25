@@ -10,7 +10,7 @@ interface IPropsTypes {
 
 const Contact: FC<IPropsTypes> = () => {
   return (
-    <section>
+    <section className="contact">
       <div className="contact__container">
         <div className="contact__leftContainer">
           <Address />

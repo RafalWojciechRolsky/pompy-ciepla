@@ -1,1 +1,48 @@
 @import '../../abstracts/variables';
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+
+  &__container {
+
+
+    h5 {
+      text-align: center;
+      text-shadow: $shadow;
+      font-weight: 500;
+    }
+
+    address {
+      margin-left: 5rem;
+      font-style: normal;
+      line-height: 2.5rem;
+    }
+
+    dl {
+      display: flex;
+      margin-top: 2rem;
+
+
+      &>div>dd {
+        margin-left: 2.2rem;
+      }
+
+      div {
+        flex: 1;
+
+        span {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  &__mapContainer {
+    height: 300px;
+    position: relative;
+  }
+
+}

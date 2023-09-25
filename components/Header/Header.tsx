@@ -54,7 +54,7 @@ const Header: FC<IPropsTypes> = () => {
               <Link href={'/'}>O Nas</Link>
             </li>
           </ul>
-          <Link href={'/'} className="btn btn--contact">
+          <Link href={'/'} className="btn btn__contact">
             Kontakt
           </Link>
         </nav>

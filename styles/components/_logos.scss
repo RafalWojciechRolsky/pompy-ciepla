@@ -15,8 +15,8 @@
     }
   }
 
-  .logos-1,
-  .logos-2 {
+  .logos__one,
+  .logos__two {
     display: flex;
     gap: 3rem
   }
@@ -28,8 +28,8 @@
       width: 100%;
     }
 
-    .logos-1,
-    .logos-2 {
+    .logos__one,
+    .logos__two {
       flex-direction: column;
     }
 

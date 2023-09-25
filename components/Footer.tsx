@@ -10,7 +10,7 @@ interface IPropsTypes {
 const Footer: FC<IPropsTypes> = (props) => {
   return (
     <footer className="footer">
-      <div className="footer--container">
+      <div className="footer__container">
         <Logo phone={false} />
         <nav>
           <Link href="/" className="regulamin">

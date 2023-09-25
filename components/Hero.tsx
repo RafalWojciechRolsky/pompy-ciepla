@@ -8,8 +8,8 @@ interface IPropsTypes {
 const Hero: FC<IPropsTypes> = () => {
   return (
     <section className="hero">
-      <div className="hero--container">
-        <div className="hero--left">
+      <div className="hero__container">
+        <div className="hero__left">
           <div className="text">
             <h1>
               <span>Pompy Ciepła</span>
@@ -31,9 +31,9 @@ const Hero: FC<IPropsTypes> = () => {
             Napisz do nas
           </a>
         </div>
-        <div className="hero--imageContainer">
+        <div className="hero__imageContainer">
           <figure>
-            <Image alt="hero Image" src="/images/Image-01.png" width={500} height={500} />
+            <Image alt="Hero Image" src="/images/Image-01.png" width={500} height={500} />
           </figure>
         </div>
       </div>

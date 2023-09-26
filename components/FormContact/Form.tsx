@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FC } from 'react';
 
 interface IPropsTypes {
@@ -6,16 +7,41 @@ interface IPropsTypes {
 
 const Form: FC<IPropsTypes> = (props) => {
   return (
-    <form className="form">
-      <label htmlFor="name">
-        <input type="text" placeholder="Imię" id="name" />
-      </label>
-      <input type="text" placeholder="Email" />
-      <input type="text" placeholder="Phone" />
-      <input type="text" placeholder="Subject" />
-      <textarea placeholder="Message" />
-      <button type="submit">Send</button>
-    </form>
+    <section className="form">
+      <h5>Bądż z nami w kontakcie</h5>
+      <form>
+        <div className="row">
+          <label htmlFor="name">
+            <input type="text" placeholder="Imię" id="name" name="name" />
+          </label>
+          <label htmlFor="">
+            <input type="email" placeholder="Email" id="email" name="email" />
+          </label>
+        </div>
+        <div className="row">
+          <label htmlFor="phone">
+            <input type="text" placeholder="Telefon" id="phone" name="phone" />
+          </label>
+          <label htmlFor="subject">
+            <input type="text" placeholder="Temat" id="subject" name="subject" />
+          </label>
+        </div>
+        <label htmlFor="message">
+          <textarea placeholder="Message" id="message" />
+        </label>
+        <div className="submit">
+          <label htmlFor="submitButton">
+            <input type="checkbox" id="submitButton" name="submitButton" />
+            <span>
+              Zgadzam się z <Link href={'/'}>Polityką Prywatności</Link>
+            </span>
+          </label>
+          <button type="submit" className="btn btn--form">
+            Wyślij
+          </button>
+        </div>
+      </form>
+    </section>
   );
 };
 

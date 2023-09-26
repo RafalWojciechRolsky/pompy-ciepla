@@ -5,6 +5,7 @@
   box-shadow: $shadow;
   padding: 1rem 1.7rem;
   font-weight: 700;
+  outline: none;
   font-size: 1.5rem;
   transition:
     background-color 0.3s ease-in-out,
@@ -20,6 +21,10 @@
     box-shadow: none;
   }
 
+  &:focus {
+    outline: none;
+  }
+
   &--hero {
     font-size: 2rem;
 
@@ -29,6 +34,21 @@
 
     @media screen and (max-width: $breakpoint-960) {
       font-size: 1.6rem;
+    }
+  }
+
+  &--form {
+    font-size: 1.5rem;
+    background-color: $primary-50;
+    color: $third-300;
+    border: 0;
+
+    &:hover {
+      background-color: $primary-100;
+      transition:
+        background-color 0.2s ease-in-out,
+        transform 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
     }
   }
 

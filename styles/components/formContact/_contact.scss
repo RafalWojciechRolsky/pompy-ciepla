@@ -9,10 +9,30 @@
   &__container {
     display: flex;
     flex-direction: row;
-    max-width: $globalWidth-1920;
+    width: $globalWidth-1920;
     justify-content: space-between;
     padding: 5rem 0;
 
+    @media screen and (max-width: $breakpoint-1200) {
+      width: $globalWidth-1400;
+    }
+
+    @media screen and (max-width: $breakpoint-960) {
+      flex-direction: column;
+      padding: 4rem 7rem;
+    }
+
+    @media screen and (max-width: $breakpoint-630) {
+      padding: 4rem 5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-630) {
+      padding: 4rem 2rem;
+    }
+
+    @media screen and (max-width: $breakpoint-500) {
+      padding: 4rem 1rem;
+    }
   }
 
   &__leftContainer {
@@ -21,7 +41,6 @@
   }
 
   &__rightContainer {
-    background-color: rgb(166, 207, 207);
     padding: 2rem;
     flex: 1
   }

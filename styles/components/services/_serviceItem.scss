@@ -1,0 +1,33 @@
+@import '../../abstracts/variables';
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  gap: 2rem;
+
+  img {
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: $shadow;
+  }
+
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+    text-shadow: $shadow;
+  }
+
+  p,
+  h5 {
+    text-align: center;
+    padding: 0 4rem;
+  }
+
+}

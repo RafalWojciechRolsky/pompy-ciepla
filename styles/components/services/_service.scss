@@ -1,0 +1,19 @@
+@import '../../abstracts/variables';
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  p,
+  h5 {
+    text-align: center;
+  }
+
+}

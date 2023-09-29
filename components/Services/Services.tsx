@@ -21,7 +21,7 @@ const Services: FC<IPropsTypes> = async (props) => {
 
   return (
     <div className="services">
-      <h2>Services</h2>
+      <h2>Zakres naszych usług</h2>
       <section>
         {services.map((service) => (
           <ServiceItem key={service.title} service={service} />

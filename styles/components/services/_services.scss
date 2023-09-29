@@ -7,23 +7,30 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5rem 0;
+  padding: 5rem 0 7rem 0;
   background-color: $secondary-400;
 
   h2 {
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
+    font-size: 4rem;
+    text-shadow: $shadow;
   }
 
   section {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     width: $globalWidth-1920;
 
-    @media screen and (max-width: $breakpoint-1200) {
-      flex-direction: column;
-      align-items: center;
+    @media screen and (max-width: $breakpoint-1440) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      width: 80%;
+      gap: 2rem;
+    }
 
-
+    @media screen and (max-width: $breakpoint-630) {
+      grid-template-columns: repeat(1, 1fr);
+      width: 60%;
     }
   }
 }

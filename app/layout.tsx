@@ -23,7 +23,6 @@ export default function RootLayout({
         <Sidebar />
         <div id="page-wrap">
           <Header />
-
           <main>{children}</main>
           <Footer />
         </div>

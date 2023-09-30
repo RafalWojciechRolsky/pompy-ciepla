@@ -33,7 +33,7 @@ const Hero: FC<IPropsTypes> = () => {
         </div>
         <div className="hero__imageContainer">
           <figure>
-            <Image alt="Hero Image" src="/images/Image-01.png" width={500} height={500} />
+            <Image alt="Hero Image" src="/images/Image-01.jpg" width={500} height={500} />
           </figure>
         </div>
       </div>

@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "title": "Czy zakup pompy ciepła to dobra decyzja?",
+    "body": [
+      "Pomaga ona zmniejszyć roczną emisję dwutlenku węgla o 44%, a w całym okresie użytkowania kosztuje nie więcej niż kocioł gazowy. Urządzenia te są skuteczne, niezawodne i przyszłościowe - w przeciwieństwie do kotłów gazowych."
+    ],
+    "links": [],
+    "textOnLeft": true,
+    "backgroundColor": "#F4F3E7",
+    "imageUrl": "Image-101.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Jak można poprawić efektywność energetyczną w domu?",
+    "body": [
+      "Stosunek zużytej energii elektrycznej do uzyskanej energii grzewczej jest niezwykle korzystny, ponieważ przeciętna pompa ciepła potrzebuje 1 kilowatogodziny energii elektrycznej, aby zamienić ją w 4 kilowatogodziny energii grzewczej."
+    ],
+    "links": [],
+    "textOnLeft": false,
+    "backgroundColor": "#F6F5EC",
+    "imageUrl": "Image-02.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Jak dużo można zaoszczędzić?",
+    "body": [
+      "Dużo. Przede wszystkim dobre pompy działają ponad 20 lat, gwarantując niemal bezobsługowe ogrzewanie domu. Jest to oszczędne i ekologiczne rozwiązanie!"
+    ],
+    "links": [],
+    "textOnLeft": true,
+    "backgroundColor": "#EDF3EC",
+    "imageUrl": "Image-07.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Po co inwestować w pompy ciepła?",
+    "body": [
+      "Stań się samowystarczalny",
+      "Zmniejsz swoje koszty ogrzewania",
+      "Zredukuję zurzycie energii",
+      "Zmniejsz swoją emisję"
+    ],
+    "links": [],
+    "textOnLeft": false,
+    "backgroundColor": "#F6F5EC",
+    "imageUrl": "Image-11.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Po co inwestować w pompy ciepła?",
+    "body": [
+      "Gwarantujemy satysfakcję",
+      "Znakomita jakość wykonania",
+      "Doświadczony serwis",
+      "Indywidualne podesjscie do tematu"
+    ],
+    "links": ["Napisz do nas", "Oferta"],
+    "textOnLeft": true,
+    "backgroundColor": "#F4F3E7",
+    "imageUrl": "Image-20.jpg"
+  }
+]

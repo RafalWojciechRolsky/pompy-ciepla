@@ -10,10 +10,15 @@
   background-color: $secondary-400;
 
   h2 {
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
     font-size: 3.5rem;
     font-weight: 500;
     text-shadow: $shadow;
+    text-align: center;
+
+    @media screen and (max-width: $breakpoint-500) {
+      font-size: 3rem;
+    }
   }
 
   section {

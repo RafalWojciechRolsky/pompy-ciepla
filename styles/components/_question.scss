@@ -15,14 +15,49 @@
     padding: 7rem 5rem;
     gap: 5rem;
 
+    @media screen and (max-width: $breakpoint-1200) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: $breakpoint-630) {
+      flex-direction: column;
+    }
+
     div {
       width: 45rem;
+
+      @media screen and (max-width: $breakpoint-960) {
+        width: 80%;
+      }
+
+      @media screen and (max-width: $breakpoint-630) {
+        width: 90%;
+      }
+
+      @media screen and (max-width: $breakpoint-500) {
+        width: 100%;
+      }
+
+      p {
+        @media screen and (max-width: $breakpoint-1200) {
+          font-size: 1.8rem;
+        }
+
+        @media screen and (max-width: $breakpoint-960) {
+          font-size: 1.6rem;
+        }
+
+      }
 
       h2 {
         font-size: 3rem;
         font-weight: 500;
         text-shadow: $shadow;
         padding-bottom: 2rem;
+
+        @media screen and (max-width: $breakpoint-960) {
+          font-size: 2.5rem;
+        }
       }
     }
   }

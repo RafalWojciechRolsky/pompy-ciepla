@@ -4,6 +4,8 @@ import { promises as fs } from 'fs';
 import Hero from '@/components/Hero';
 import Logos from '@/components/Logos';
 import Question from '@/components/Question';
+import Services from '@/components/Services/Services';
+import Movies from '@/components/Movies';
 
 interface QuestionType {
   id: number;
@@ -43,6 +45,8 @@ const HomePage = async () => {
           imageUrl={question.imageUrl}
         />
       ))}
+      <Movies />
+      <Services />
     </>
   );
 };

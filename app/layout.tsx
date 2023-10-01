@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { Ubuntu } from 'next/font/google';
 import Footer from '@/components/Footer';
 import Sidebar from '@/components/Header/Sidebar';
+import Contact from '@/components/FormContact/Contact';
 
 const ubuntu = Ubuntu({ weight: ['300', '400', '500', '700'], subsets: ['latin-ext'] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <div id="page-wrap">
           <Header />
           <main>{children}</main>
+          <Contact />
           <Footer />
         </div>
       </body>

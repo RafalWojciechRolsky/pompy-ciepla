@@ -36,25 +36,25 @@ const Header: FC<IPropsTypes> = () => {
               <Link href={'/'}>Home</Link>
             </li>
             <li>
-              <Link href={'/'}>Pompy Ciepła</Link>
+              <Link href={'/pompy-ciepla'}>Pompy Ciepła</Link>
             </li>
             <li>
-              <Link href={'/'}>Klimatyzatory</Link>
+              <Link href={'/klimatyzatory'}>Klimatyzatory</Link>
             </li>
             <li>
-              <Link href={'/'}>Producenci</Link>
+              <Link href={'/producenci'}>Producenci</Link>
             </li>
             <li>
-              <Link href={'/'}>Realizacje</Link>
+              <Link href={'/realizacje'}>Realizacje</Link>
             </li>
             <li>
-              <Link href={'/'}>Oferta</Link>
+              <Link href={'/oferta'}>Oferta</Link>
             </li>
             <li>
-              <Link href={'/'}>O Nas</Link>
+              <Link href={'/about'}>O Nas</Link>
             </li>
           </ul>
-          <Link href={'/'} className="btn btn__contact">
+          <Link href={'/#form-contact'} className="btn btn__contact">
             Kontakt
           </Link>
         </nav>

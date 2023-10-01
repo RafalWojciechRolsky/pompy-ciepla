@@ -8,7 +8,7 @@ interface IPropsTypes {
 const Form: FC<IPropsTypes> = (props) => {
   return (
     <section className="form" id='form-contact'>
-      <h5>Bądż z nami w kontakcie</h5>
+      <h5>Bądź z nami w kontakcie</h5>
       <form>
         <div className="row">
           <label htmlFor="name">

@@ -26,7 +26,7 @@ const Movies: FC<IPropsTypes> = (props) => {
         <h2>Filmy o pompach</h2>
         <p>
           Czasem najlepiej jest zamiast poczytać zobaczyć o co chodzi bo jeden obraz jest wart
-          tysiąca słów. Polecamy zobaczyć flmy kompetentnie traktujące o tym czym są pompy ciepła i
+          tysiąca słów. Polecamy zobaczyć filmy kompetentnie traktujące o tym czym są pompy ciepła i
           jakie są ich niewątpliwe zalety.
         </p>
         <div className="videoContainer">

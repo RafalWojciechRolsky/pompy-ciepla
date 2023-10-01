@@ -15,18 +15,18 @@ const Logos: FC<IPropsTypes> = () => {
     <div className="logos">
       <div className="logos__one">
         <Link href={'/'}>
-          <Image src={GreeLogo} alt="Gree" height={50} />
+          <Image src={GreeLogo} alt="Gree" height={65} />
         </Link>
         <Link href={'/'}>
-          <Image src={Panasonic} alt="Panasonic" height={50} />
+          <Image src={Panasonic} alt="Panasonic" height={65} />
         </Link>
       </div>
       <div className="logos__two">
         <Link href={'/'}>
-          <Image src={Haier} alt="Haier" height={50} />
+          <Image src={Haier} alt="Haier" height={65} />
         </Link>
         <Link href={'/'}>
-          <Image src={Rotenso} alt="Rotenso" height={50} />
+          <Image src={Rotenso} alt="Rotenso" height={65} />
         </Link>
       </div>
     </div>

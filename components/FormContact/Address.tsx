@@ -75,8 +75,7 @@ const Address: FC<IPropsTypes> = (props) => {
             border: '0',
             width: '100%',
             height: '100%',
-            padding: '2rem',
-            borderRadius: '3rem',
+            borderRadius: '1rem',
           }}
           loading="lazy"
         />

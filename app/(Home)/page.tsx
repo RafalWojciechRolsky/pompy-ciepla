@@ -14,15 +14,23 @@ interface QuestionType {
   backgroundColor: string;
   imageUrl: string;
 }
+interface HeroType {
+  id: number;
+  title: string;
+  points: string[];
+  imageUrl: string;
+}
 
 const HomePage = async () => {
   const jsonDir = path.join(process.cwd(), 'data', '');
-  const data = await fs.readFile(path.join(jsonDir, 'questions.json'), 'utf8');
-  const questions: QuestionType[] = JSON.parse(data);
+  const resQuestions = await fs.readFile(path.join(jsonDir, 'questions.json'), 'utf8');
+  const resHero = await fs.readFile(path.join(jsonDir, 'hero.json'), 'utf8');
+  const questions: QuestionType[] = JSON.parse(resQuestions);
+  const hero: HeroType[] = JSON.parse(resHero);
 
   return (
     <>
-      <Hero />
+      <Hero title={hero[0].title} points={hero[0].points} imageUrl={hero[0].imageUrl} />
       <Logos />
       {questions.map((question) => (
         <Question

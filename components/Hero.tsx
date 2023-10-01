@@ -2,29 +2,26 @@ import Image from 'next/image';
 import { FC } from 'react';
 
 interface IPropsTypes {
-  name?: string;
+  title: string;
+  points: string[];
+  imageUrl: string;
 }
 
-const Hero: FC<IPropsTypes> = () => {
+const Hero: FC<IPropsTypes> = ({ title, points, imageUrl }) => {
   return (
     <section className="hero">
       <div className="hero__container">
         <div className="hero__left">
           <div className="text">
-            <h1>
-              <span>Pompy Ciepła</span>
-              to ogrzewanie energią ze środowiska
-            </h1>
+            <h1 dangerouslySetInnerHTML={{ __html: title }} />
             <ul>
-              <li>
-                <span>Zużywają do 3/4 ciepła otoczenia</span>
-              </li>
-              <li>
-                <span>Mniejsza zależność od zmieniających się cen ropy lub gazu</span>
-              </li>
-              <li>
-                <span>Łatwa rozbudowa do systemu hybrydowego</span>
-              </li>
+              {points.map((point, index) => {
+                return (
+                  <li key={point}>
+                    <span>{point}</span>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <a href="/" className="btn btn--hero">
@@ -33,7 +30,7 @@ const Hero: FC<IPropsTypes> = () => {
         </div>
         <div className="hero__imageContainer">
           <figure>
-            <Image alt="Hero Image" src="/images/Image-01.jpg" width={500} height={500} />
+            <Image alt="Hero Image" src={`/images/${imageUrl}`} width={500} height={500} />
           </figure>
         </div>
       </div>

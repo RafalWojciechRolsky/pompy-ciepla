@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "<span>Pompy Ciepła</span> to ogrzewanie energią ze środowiska",
+    "points": [
+      "Zużywają do 3/4 ciepła otoczenia",
+      "Mniejsza zależność od zmieniających się cen ropy lub gazu",
+      "Łatwa rozbudowa do systemu hybrydowego"
+    ],
+    "imageUrl": "Image-01.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Istnieją dwa główne rodzaje <span>Pomp Ciepła</span>",
+    "points": [
+      "Pompy ciepła powietrze-powietrze",
+      "Pompy ciepła źródło wodne i geotermalne",
+      "Efektywne rozwiązania dla każdego typu budynku"
+    ],
+    "imageUrl": "Image-15.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Czołowi producenci <span>Pomp Ciepła</span> w naszej ofercie",
+    "points": [
+      "Rozpoznawalność wśród specjalistów na świecie",
+      "Współczesnie najlepsze technologie grzewcze",
+      "Nowoczesny sposób na ogrzewanie"
+    ],
+    "imageUrl": "Image-16.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Realizacje instalacji <span>Pomp Ciepła</span> z naszej oferty",
+    "points": [
+      "Zastosowanie nowoczesnych technologii w praktyce",
+      "Zobacz, jak pompy ciepła zmieniły komfort życia naszych klientów",
+      "Projekty dostosowane do indywidualnych potrzeb"
+    ],
+    "imageUrl": "Image-08.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Pompy ciepła i <span>Klimatyzatory</span> w jednym miejscu",
+    "points": [
+      "Wydajność energetyczna, która przekłada się na oszczędności",
+      "Klimatyzatory nowej generacji zapewniające czyste i świeże powietrze",
+      "Kompleksowa obsługa – od wyboru do montażu"
+    ],
+    "imageUrl": "Image-26.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Kompleksowa oferta dotycząca <span>Pomp Ciepła</span>",
+    "points": [
+      "Profesjonalne doradztwo i projektowanie",
+      "Instalacja i serwisowanie",
+      "Opcje finansowania dla każdego klienta"
+    ],
+    "imageUrl": "Image-24.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Twój partner w świecie <span>Pomp Piepła</span>",
+    "points": [
+      "Stawiamy na jakość, innowacyjność i profesjonalizm",
+      "Połączenie pasji z najnowszymi technologiami",
+      "Satysfakcja klienta to nasz priorytet"
+    ],
+    "imageUrl": "Image-20.jpg"
+  }
+]

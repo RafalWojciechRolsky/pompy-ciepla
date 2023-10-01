@@ -55,7 +55,7 @@
       "Doświadczony serwis",
       "Indywidualne podesjscie do tematu"
     ],
-    "links": ["Napisz do nas", "Oferta"],
+    "links": [["Napisz do nas", "/", "btn"], ["Oferta", "/", "btn btn--offer"]],
     "textOnLeft": true,
     "backgroundColor": "#F4F3E7",
     "imageUrl": "Image-20.jpg"

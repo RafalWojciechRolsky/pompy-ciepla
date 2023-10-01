@@ -119,6 +119,30 @@
           display: inline-block;
         }
       }
+
+      .links {
+        display: flex;
+        justify-content: flex-start;
+        gap: 2rem;
+        margin-top: 2rem;
+        width: 100%;
+
+        a {
+          font-size: 2rem;
+
+
+
+          @media screen and (max-width: $breakpoint-1200) {
+            font-size: 1.8rem;
+          }
+
+          @media screen and (max-width: $breakpoint-960) {
+            font-size: 1.6rem;
+          }
+
+        }
+
+      }
     }
   }
 

@@ -4,7 +4,7 @@ import { FC } from 'react';
 interface IPropsTypes {
   title: string;
   body: string[];
-  links: string[];
+  links: string[][];
   textOnLeft: boolean;
   backgroundColor: string;
   imageUrl: string;
@@ -25,6 +25,22 @@ const Question: FC<IPropsTypes> = (props) => {
               })}
             </ul>
           )}
+          <div className="links">
+            {props.links.length !== 0 &&
+              props.links.map((link, i) => {
+                return (
+                  <a
+                    href={link[1]}
+                    key={link[0]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={link[2]}
+                  >
+                    {`${link[0]}`}
+                  </a>
+                );
+              })}
+          </div>
         </div>
         <div className="question__imageContainer">
           <figure>

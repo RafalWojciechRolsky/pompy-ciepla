@@ -25,6 +25,15 @@
     outline: none;
   }
 
+  &--offer {
+    background-color: $primary-50;
+    color: $third-400;
+
+    &:hover {
+      background-color: $primary-100;
+    }
+  }
+
   &--hero {
     font-size: 2rem;
 
@@ -49,6 +58,7 @@
         background-color 0.2s ease-in-out,
         transform 0.3s ease-in-out,
         box-shadow 0.3s ease-in-out;
+      cursor: pointer;
     }
   }
 

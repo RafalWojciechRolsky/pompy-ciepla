@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import { FC } from 'react';
+import { FaLongArrowAltRight } from 'react-icons/fa';
 
 interface IPropsTypes {
   title: string;
   body: string[];
-  links: string[][];
+  links: boolean;
   textOnLeft: boolean;
   backgroundColor: string;
   imageUrl: string;
@@ -25,22 +26,16 @@ const Question: FC<IPropsTypes> = (props) => {
               })}
             </ul>
           )}
-          <div className="links">
-            {props.links.length !== 0 &&
-              props.links.map((link, i) => {
-                return (
-                  <a
-                    href={link[1]}
-                    key={link[0]}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={link[2]}
-                  >
-                    {`${link[0]}`}
-                  </a>
-                );
-              })}
-          </div>
+          {props.links === true && (
+            <div className="links">
+              <a href={'/'} target="_blank" rel="noopener noreferrer" className="btn">
+                Napisz do nas
+              </a>
+              <a href={'/'} target="_blank" rel="noopener noreferrer" className="btn btn--offer">
+                Oferta <FaLongArrowAltRight size={15} />
+              </a>
+            </div>
+          )}
         </div>
         <div className="question__imageContainer">
           <figure>

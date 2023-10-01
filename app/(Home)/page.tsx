@@ -9,7 +9,7 @@ interface QuestionType {
   id: number;
   title: string;
   body: string[];
-  links: string[];
+  links: boolean;
   textOnLeft: boolean;
   backgroundColor: string;
   imageUrl: string;

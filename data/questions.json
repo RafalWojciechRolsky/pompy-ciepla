@@ -5,7 +5,7 @@
     "body": [
       "Pomaga ona zmniejszyć roczną emisję dwutlenku węgla o 44%, a w całym okresie użytkowania kosztuje nie więcej niż kocioł gazowy. Urządzenia te są skuteczne, niezawodne i przyszłościowe - w przeciwieństwie do kotłów gazowych."
     ],
-    "links": [],
+    "links": false,
     "textOnLeft": true,
     "backgroundColor": "#F4F3E7",
     "imageUrl": "Image-101.jpg"
@@ -16,7 +16,7 @@
     "body": [
       "Stosunek zużytej energii elektrycznej do uzyskanej energii grzewczej jest niezwykle korzystny, ponieważ przeciętna pompa ciepła potrzebuje 1 kilowatogodziny energii elektrycznej, aby zamienić ją w 4 kilowatogodziny energii grzewczej."
     ],
-    "links": [],
+    "links": false,
     "textOnLeft": false,
     "backgroundColor": "#F6F5EC",
     "imageUrl": "Image-02.jpg"
@@ -27,7 +27,7 @@
     "body": [
       "Dużo. Przede wszystkim dobre pompy działają ponad 20 lat, gwarantując niemal bezobsługowe ogrzewanie domu. Jest to oszczędne i ekologiczne rozwiązanie!"
     ],
-    "links": [],
+    "links": false,
     "textOnLeft": true,
     "backgroundColor": "#EDF3EC",
     "imageUrl": "Image-07.jpg"
@@ -41,7 +41,7 @@
       "Zredukuję zurzycie energii",
       "Zmniejsz swoją emisję"
     ],
-    "links": [],
+    "links": false,
     "textOnLeft": false,
     "backgroundColor": "#F6F5EC",
     "imageUrl": "Image-11.jpg"
@@ -55,7 +55,7 @@
       "Doświadczony serwis",
       "Indywidualne podesjscie do tematu"
     ],
-    "links": [["Napisz do nas", "/", "btn"], ["Oferta", "/", "btn btn--offer"]],
+    "links": true,
     "textOnLeft": true,
     "backgroundColor": "#F4F3E7",
     "imageUrl": "Image-20.jpg"

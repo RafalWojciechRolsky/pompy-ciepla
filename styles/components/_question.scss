@@ -123,14 +123,13 @@
       .links {
         display: flex;
         justify-content: flex-start;
+        flex-wrap: wrap;
         gap: 2rem;
         margin-top: 2rem;
         width: 100%;
 
         a {
           font-size: 2rem;
-
-
 
           @media screen and (max-width: $breakpoint-1200) {
             font-size: 1.8rem;

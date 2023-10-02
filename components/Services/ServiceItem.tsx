@@ -20,6 +20,7 @@ const ServiceItem: FC<IPropsTypes> = async ({ service: { title, description, ima
           src={`/images/${imageUrl}`}
           height={300}
           width={261}
+          sizes="261px"
           alt={title}
           placeholder="blur"
           blurDataURL={blurredDataUrl}

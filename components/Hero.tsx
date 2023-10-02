@@ -36,10 +36,10 @@ const Hero: FC<IPropsTypes> = async ({ title, points, imageUrl }) => {
             <Image
               alt="Hero Image"
               src={`/images/${imageUrl}`}
-              width={500}
-              height={500}
+              fill={true}
               placeholder="blur"
               blurDataURL={blurredDataUrl}
+              sizes="(min-width: 1460px) 435px, (min-width: 1220px) calc(54.55vw - 269px), (min-width: 980px) calc(54.55vw - 224px), (min-width: 640px) 56.25vw, 71.88vw"
             />
           </figure>
         </div>

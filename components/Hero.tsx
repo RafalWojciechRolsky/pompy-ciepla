@@ -1,3 +1,4 @@
+import { getBase64 } from '@/lib/getBase64';
 import Image from 'next/image';
 import { FC } from 'react';
 
@@ -7,7 +8,9 @@ interface IPropsTypes {
   imageUrl: string;
 }
 
-const Hero: FC<IPropsTypes> = ({ title, points, imageUrl }) => {
+const Hero: FC<IPropsTypes> = async ({ title, points, imageUrl }) => {
+  const blurredDataUrl = await getBase64(imageUrl);
+
   return (
     <section className="hero">
       <div className="hero__container">
@@ -30,7 +33,14 @@ const Hero: FC<IPropsTypes> = ({ title, points, imageUrl }) => {
         </div>
         <div className="hero__imageContainer">
           <figure>
-            <Image alt="Hero Image" src={`/images/${imageUrl}`} width={500} height={500} />
+            <Image
+              alt="Hero Image"
+              src={`/images/${imageUrl}`}
+              width={500}
+              height={500}
+              placeholder="blur"
+              blurDataURL={blurredDataUrl}
+            />
           </figure>
         </div>
       </div>

@@ -18,25 +18,25 @@ const Sidebar: FC<IPropsTypes> = () => {
             <Link href={'/'}>Home</Link>
           </li>
           <li className="menu-item">
-            <Link href={'/'}>Pompy Ciepła</Link>
+            <Link href={'/pompy-ciepla'}>Pompy Ciepła</Link>
           </li>
           <li className="menu-item">
-            <Link href={'/'}>Klimatyzatory</Link>
+            <Link href={'/klimatyzatory'}>Klimatyzatory</Link>
           </li>
           <li className="menu-item">
-            <Link href={'/'}>Producenci</Link>
+            <Link href={'/producenci'}>Producenci</Link>
           </li>
           <li className="menu-item">
-            <Link href={'/'}>Realizacje</Link>
+            <Link href={'/realizacje'}>Realizacje</Link>
           </li>
           <li className="menu-item">
-            <Link href={'/'}>Oferta</Link>
+            <Link href={'/oferta'}>Oferta</Link>
           </li>
           <li className="menu-item">
-            <Link href={'/'}>O Nas</Link>
+            <Link href={'/about'}>O Nas</Link>
           </li>
           <li className="menu-item">
-            <Link href={'/'}>Kontakt</Link>
+            <Link href={'/#form-contact'}>Kontakt</Link>
           </li>
         </ul>
       </nav>

@@ -1,3 +1,4 @@
+import { getBase64 } from '@/lib/getBase64';
 import Image from 'next/image';
 import { FC } from 'react';
 
@@ -10,10 +11,19 @@ interface IPropsTypes {
 }
 
 const ServiceItem: FC<IPropsTypes> = async ({ service: { title, description, imageUrl } }) => {
+  const blurredDataUrl = await getBase64(imageUrl);
+
   return (
     <div className="service">
       <figure>
-        <Image src={`/${imageUrl}`} height={300} width={261} alt={title} />
+        <Image
+          src={`/images/${imageUrl}`}
+          height={300}
+          width={261}
+          alt={title}
+          placeholder="blur"
+          blurDataURL={blurredDataUrl}
+        />
       </figure>
       <h5>{title}</h5>
       <p>{description}</p>

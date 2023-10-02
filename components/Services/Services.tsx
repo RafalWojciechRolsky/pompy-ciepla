@@ -14,7 +14,7 @@ interface IPropsTypes {
   name?: string;
 }
 
-const Services: FC<IPropsTypes> = async (props) => {
+const Services: FC<IPropsTypes> = async () => {
   const jsonDir = path.join(process.cwd(), 'data', '');
   const data = await fs.readFile(path.join(jsonDir, 'services.json'), 'utf8');
   const services: Service[] = JSON.parse(data);

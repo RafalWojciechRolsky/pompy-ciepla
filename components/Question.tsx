@@ -1,3 +1,4 @@
+import { getBase64 } from '@/lib/getBase64';
 import Image from 'next/image';
 import { FC } from 'react';
 import { FaLongArrowAltRight } from 'react-icons/fa';
@@ -11,7 +12,9 @@ interface IPropsTypes {
   imageUrl: string;
 }
 
-const Question: FC<IPropsTypes> = (props) => {
+const Question: FC<IPropsTypes> = async (props) => {
+  const blurredDataUrl = await getBase64(props.imageUrl);
+
   return (
     <div className="question" style={{ backgroundColor: props.backgroundColor }}>
       <section className={`question__container ${props.textOnLeft ? 'row' : 'row-reverse'}`}>
@@ -44,6 +47,8 @@ const Question: FC<IPropsTypes> = (props) => {
               src={`/images/${props.imageUrl}`}
               width={400}
               height={400}
+              placeholder="blur"
+              blurDataURL={blurredDataUrl}
             />
           </figure>
         </div>

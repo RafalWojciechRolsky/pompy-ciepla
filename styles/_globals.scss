@@ -30,7 +30,7 @@ html {
   color: $third-400;
   font-size: 1.5rem;
   font-weight: 300;
-  letter-spacing: 0.1rem;
+  letter-spacing: .1rem;
 }
 
 body {
@@ -75,14 +75,13 @@ h6 {
 
 p {
   font-size: 2rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
   font-weight: 200;
   color: $third-300;
 }
 
 li {
   line-height: 3.5rem;
-  padding: 0.5rem 0;
   padding: 0;
   list-style-type: none;
   color: $third-300;

@@ -8,17 +8,17 @@ interface IPropsTypes {
 }
 
 const Form: FC<IPropsTypes> = (props) => {
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
     const formData = new FormData(e.currentTarget as HTMLFormElement);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const phone = formData.get('phone');
-    const subject = formData.get('subject');
-    const message = formData.get('message');
+    const response = await fetch('/api/form', {
+      method: 'POST',
+      body: formData,
+    });
 
-    console.log(name, email, phone, subject, message);
+    const result = await response.json();
+    console.log(result);
 
     return null;
   };

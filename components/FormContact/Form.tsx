@@ -1,15 +1,32 @@
+'use client';
+
 import Link from 'next/link';
-import { FC } from 'react';
+import { FC, FormEvent } from 'react';
 
 interface IPropsTypes {
   name?: string;
 }
 
 const Form: FC<IPropsTypes> = (props) => {
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.currentTarget as HTMLFormElement);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const phone = formData.get('phone');
+    const subject = formData.get('subject');
+    const message = formData.get('message');
+
+    console.log(name, email, phone, subject, message);
+
+    return null;
+  };
+
   return (
-    <section className="form" id='form-contact'>
+    <section className="form" id="form-contact">
       <h5>Bądź z nami w kontakcie</h5>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="row">
           <label htmlFor="name">
             <input type="text" placeholder="Imię" id="name" name="name" />

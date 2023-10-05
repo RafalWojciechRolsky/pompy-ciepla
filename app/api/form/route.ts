@@ -1,8 +1,10 @@
-export const POST = async (request: Request) => {
-  const formData = await request.formData();
-  const name = formData.get('name');
-  const email = formData.get('email');
-  console.log({ name, email });
+import { formSchema } from '@/model/formShema';
 
-  return Response.json({ name, email });
+export const POST = async (request: Request) => {
+  const rawData = await request.json();
+
+  const parsedData = formSchema.parse(rawData);
+  console.log(parsedData);
+
+  return Response.json({});
 };

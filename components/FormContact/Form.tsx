@@ -2,7 +2,7 @@
 
 import { formSchema } from '@/model/formShema';
 import Link from 'next/link';
-import { FC, FormEvent } from 'react';
+import { FC } from 'react';
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -18,19 +18,21 @@ const Form: FC<IPropsTypes> = (props) => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<FormSchema>({ resolver: zodResolver(formSchema) });
+  } = useForm<FormSchema>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      subject: 'Zapytanie o ofertę',
+    },
+  });
 
   const submitData = async (data: FormSchema) => {
-    // e.preventDefault();
+    const response = await fetch('/api/form', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
 
-    // const formData = new FormData(e.currentTarget as HTMLFormElement);
-    // const response = await fetch('/api/form', {
-    //   method: 'POST',
-    //   body: formData,
-    // });
-
-    // const result = await response.json();
-    console.log(data);
+    const result = await response.json();
+    console.log(result);
   };
 
   return (
@@ -40,26 +42,26 @@ const Form: FC<IPropsTypes> = (props) => {
         <div className="row">
           <label htmlFor="name">
             <input type="text" placeholder="Imię" id="name" {...register('name')} />
-            {errors.name && <span className="formError">Wypełnij pole</span>}
+            {errors.name && <span className="formError">{errors.name?.message}</span>}
           </label>
           <label htmlFor="">
             <input type="email" placeholder="Email" id="email" {...register('email')} />
-            {errors.email && <span className="formError">Wypełnij pole</span>}
+            {errors.email && <span className="formError">{errors.email?.message}</span>}
           </label>
         </div>
         <div className="row">
           <label htmlFor="phone">
             <input type="text" placeholder="Telefon" id="phone" {...register('phone')} />
-            {errors.phone && <span className="formError">Wypełnij pole</span>}
+            {errors.phone && <span className="formError">{errors.phone?.message}</span>}
           </label>
           <label htmlFor="subject">
             <input type="text" placeholder="Temat" id="subject" {...register('subject')} />
-            {errors.subject && <span className="formError">Wypełnij pole</span>}
+            {errors.subject && <span className="formError">{errors.subject?.message}</span>}
           </label>
         </div>
         <label htmlFor="message">
           <textarea placeholder="Message" id="message" {...register('message')} />
-          {errors.message && <span className="formError">Wypełnij pole</span>}
+          {errors.message && <span className="formError">{errors.message?.message}</span>}
         </label>
         <div className="submit">
           <label htmlFor="submitButton">

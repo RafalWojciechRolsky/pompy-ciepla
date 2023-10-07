@@ -12,7 +12,7 @@ export const formSchema = z.object({
   email: z
     .string()
     .email({
-      message: 'Nieprawidłowy adres e-mail',
+      message: 'Należy podać adres e-mail',
     })
     .refine((value) => value.length >= 6, {
       message: 'Adres e-mail musi mieć co najmniej 6 znaków',
@@ -20,15 +20,20 @@ export const formSchema = z.object({
     .refine((value) => value.length <= 40, {
       message: 'Adres e-mail może mieć maksymalnie 40 znaków',
     }),
-  phone: z.string().refine(
-    (value) => {
-      const regex = /^(\+48)?[ \-]?(\d{3}[ \-]?\d{3}[ \-]?\d{3})$/;
-      return regex.test(value);
-    },
-    {
-      message: 'Błędny format numeru telefonu',
-    },
-  ),
+  phone: z
+    .string()
+    .refine((value) => value.length !== 0, {
+      message: 'Podaj telefon (format xxx-xxx-xxx)',
+    })
+    .refine(
+      (value) => {
+        const regex = /^(\+48)?[ \-]?(\d{3}[ \-]?\d{3}[ \-]?\d{3})$/;
+        return regex.test(value);
+      },
+      {
+        message: 'Błędny format numeru telefonu',
+      },
+    ),
   subject: z
     .string()
     .refine((value) => value.length >= 2, {

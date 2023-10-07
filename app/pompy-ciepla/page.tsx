@@ -44,8 +44,20 @@ const PompyPage = async () => {
             instalować oddzielnych systemów do chłodzenia swoich domów.
           </p>
           <figure>
-            <Image alt="" src="/images/Image-201.jpg" width={400} height={400} />
-            <Image alt="" src="/images/Image-200.jpg" width={400} height={400} />
+            <Image
+              alt=""
+              src="/images/Image-201.jpg"
+              width={400}
+              height={400}
+              sizes="(min-width: 1220px) 400px, (min-width: 980px) 300px, (min-width: 520px) 250px, 200px"
+            />
+            <Image
+              alt=""
+              src="/images/Image-200.jpg"
+              width={400}
+              height={400}
+              sizes="(min-width: 1220px) 400px, (min-width: 980px) 300px, (min-width: 520px) 250px, 200px"
+            />
           </figure>
           <p>
             Stosunek zużytej energii elektrycznej do uzyskanej energii grzewczej jest niezwykle
@@ -81,10 +93,22 @@ const PompyPage = async () => {
                 wymiennikiem wypełnionym glikolem.
               </p>
             </div>
-            <Image alt="" src="/images/Image-102.jpg" width={400} height={400} />
+            <Image
+              alt=""
+              src="/images/Image-102.jpg"
+              width={400}
+              height={400}
+              sizes="(min-width: 1220px) 400px, (min-width: 980px) 350px, (min-width: 640px) 300px, (min-width: 520px) 250px, 200px"
+            />
           </div>
           <div className="block block--reverse">
-            <Image alt="" src="/images/Image-103.jpg" width={400} height={400} />
+            <Image
+              alt=""
+              src="/images/Image-103.jpg"
+              width={400}
+              height={400}
+              sizes="(min-width: 1220px) 400px, (min-width: 980px) 350px, (min-width: 640px) 300px, (min-width: 520px) 250px, 200px"
+            />
             <div>
               <h4>Pompy typu Split</h4>
               <p>
@@ -107,10 +131,22 @@ const PompyPage = async () => {
                 osiągnie takich parametrów jak typowa pompa ciepła.
               </p>
             </div>
-            <Image alt="" src="/images/Image-202.jpg" width={400} height={400} />
+            <Image
+              alt=""
+              src="/images/Image-202.jpg"
+              width={400}
+              height={400}
+              sizes="(min-width: 1220px) 400px, (min-width: 980px) 350px, (min-width: 640px) 300px, (min-width: 520px) 250px, 200px"
+            />
           </div>
           <div className="block block--reverse">
-            <Image alt="" src="/images/Image-203.jpg" width={400} height={400} />
+            <Image
+              alt=""
+              src="/images/Image-203.jpg"
+              width={400}
+              height={400}
+              sizes="(min-width: 1220px) 400px, (min-width: 980px) 350px, (min-width: 640px) 300px, (min-width: 520px) 250px, 200px"
+            />
             <div>
               <h4>Pompy ciepła typu powietrze-woda</h4>
               <p>
@@ -142,7 +178,13 @@ const PompyPage = async () => {
                 domów.
               </p>
             </div>
-            <Image alt="" src="/images/Image-204.jpg" width={400} height={400} />
+            <Image
+              alt=""
+              src="/images/Image-204.jpg"
+              width={400}
+              height={400}
+              sizes="(min-width: 1220px) 400px, (min-width: 980px) 350px, (min-width: 640px) 300px, (min-width: 520px) 250px, 200px"
+            />
           </div>
           <p>
             Czy gruntowa pompa ciepła jest odpowiednia dla Ciebie będzie zależeć od wielkości
@@ -184,6 +226,7 @@ const PompyPage = async () => {
             width={600}
             height={369}
             className="pumpSchema"
+            sizes="(min-width: 980px) 600px, 450px"
           />
           <h3>Działanie pompy w trybie chłodzenia</h3>
           <ol>

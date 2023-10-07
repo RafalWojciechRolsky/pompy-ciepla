@@ -51,7 +51,13 @@ const Form: FC<IPropsTypes> = (props) => {
         </div>
         <div className="row">
           <label htmlFor="phone">
-            <input type="text" placeholder="Telefon" id="phone" {...register('phone')} />
+            <input
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+              placeholder="Telefon w formacie xxx-xxx-xxx"
+              id="phone"
+              {...register('phone')}
+            />
             {errors.phone && <span className="formError">{errors.phone?.message}</span>}
           </label>
           <label htmlFor="subject">
@@ -65,9 +71,8 @@ const Form: FC<IPropsTypes> = (props) => {
         </label>
         <div className="submit">
           <label htmlFor="submitButton">
-            <input type="checkbox" id="submitButton" name="submitButton" />
             <span>
-              Zgadzam się z <Link href={'/'}>Polityką Prywatności</Link>
+              Wysyłając formularz zgadzasz się z <Link href={'/'}>Polityką Prywatności</Link>
             </span>
           </label>
           <button type="submit" className="btn btn--form">

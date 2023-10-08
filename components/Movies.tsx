@@ -37,10 +37,10 @@ const Movies: FC<IPropsTypes> = (props) => {
           {/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
           <div onClick={() => setPlay(true)}>
             {play ? (
-              <ReactPlayer url="https://www.youtube.com/watch?v=oDAknaJ9Kpo" playing />
+              <ReactPlayer url="https://www.youtube.com/watch?v=chiXIU5FjlE" playing />
             ) : (
               <img
-                src="https://img.youtube.com/vi/oDAknaJ9Kpo/maxresdefault.jpg"
+                src="https://img.youtube.com/vi/chiXIU5FjlE/maxresdefault.jpg"
                 alt="Video thumbnail"
               />
             )}

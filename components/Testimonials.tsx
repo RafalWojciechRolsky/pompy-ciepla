@@ -35,7 +35,7 @@ const initJustReviewTestimonials = () => {
       visibleSlides: 3,
       displayTopRatingsFirst: true,
       sortByDate: false,
-      filterByPageLang: true,
+      filterByPageLang: false,
       hideEmpty: true,
       includeEng: false,
       htmlLangPage: '',

@@ -23,7 +23,7 @@ export const formSchema = z.object({
   phone: z
     .string()
     .refine((value) => value.length !== 0, {
-      message: 'Podaj telefon (format xxx-xxx-xxx)',
+      message: 'Podaj komórkę (format xxx-xxx-xxx)',
     })
     .refine(
       (value) => {

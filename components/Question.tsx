@@ -31,7 +31,7 @@ const Question: FC<IPropsTypes> = async (props) => {
           )}
           {props.links === true && (
             <div className="links">
-              <a href={'/'} target="_blank" rel="noopener noreferrer" className="btn">
+              <a href={'/#form-contact'} rel="noopener" className="btn">
                 Napisz do nas
               </a>
               <a href={'/'} target="_blank" rel="noopener noreferrer" className="btn btn--offer">
@@ -43,7 +43,7 @@ const Question: FC<IPropsTypes> = async (props) => {
         <div className="question__imageContainer">
           <figure>
             <Image
-              alt="Question Image"
+              alt={props.title}
               src={`/images/${props.imageUrl}`}
               fill={true}
               sizes="(min-width: 1760px) 550px, (min-width: 1460px) calc(23.57vw + 140px), (min-width: 1320px) 550px, (min-width: 640px) calc(46.21vw - 51px), (min-width: 520px) calc(90vw - 54px), calc(100vw - 60px)"

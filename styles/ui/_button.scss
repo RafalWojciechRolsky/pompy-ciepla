@@ -14,6 +14,7 @@
 
   &:hover {
     background-color: $warning-600;
+    transform: translateY(-1px);
   }
 
   &:active {

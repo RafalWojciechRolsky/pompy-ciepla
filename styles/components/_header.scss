@@ -50,7 +50,7 @@
         transition: all .2s ease-in;
 
         &:hover {
-          color: $third-400;
+          color: $warning-600;
         }
       }
     }
@@ -74,17 +74,17 @@
         display: flex;
         align-items: center;
         height: 7rem;
-        transition: all .2s ease-in;
-
-        &:hover {
-          background-color: $primary-500;
-        }
       }
 
       a {
         font-weight: 500;
         padding: 1rem 1rem;
         font-size: 1.5rem;
+        transition: all .2s ease-in;
+
+        &:hover {
+          color: $warning-600;
+        }
       }
     }
   }

@@ -8,11 +8,9 @@
 
   &__container {
 
-
     h5 {
       text-align: center;
       text-shadow: $shadow;
-      font-weight: 500;
 
       @media screen and (max-width: $breakpoint-500) {
         font-size: 2.5rem;

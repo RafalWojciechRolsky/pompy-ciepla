@@ -54,7 +54,7 @@ const Form: FC<IPropsTypes> = (props) => {
             <input
               type="tel"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
-              placeholder="Telefon w formacie xxx-xxx-xxx"
+              placeholder="Komórka w formacie xxx-xxx-xxx"
               id="phone"
               {...register('phone')}
             />
@@ -66,7 +66,7 @@ const Form: FC<IPropsTypes> = (props) => {
           </label>
         </div>
         <label htmlFor="message">
-          <textarea placeholder="Message" id="message" {...register('message')} />
+          <textarea placeholder="Treść wiadomości" id="message" {...register('message')} />
           {errors.message && <span className="formError">{errors.message?.message}</span>}
         </label>
         <div className="submit">

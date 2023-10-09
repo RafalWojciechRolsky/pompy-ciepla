@@ -1,9 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
 'use client';
 
+import Image from 'next/image';
 import { FC, useState } from 'react';
-// import YouTube, { YouTubeProps } from 'react-youtube';
-import ReactPlayer from 'react-player';
+import YouTube, { YouTubeProps } from 'react-youtube';
 
 interface IPropsTypes {
   name?: string;
@@ -11,17 +10,17 @@ interface IPropsTypes {
 
 const Movies: FC<IPropsTypes> = (props) => {
   const [play, setPlay] = useState(false);
-  // const onPlayerReady: YouTubeProps['onReady'] = (event) => {
-  //   event.target.pauseVideo();
-  // };
+  const onPlayerReady: YouTubeProps['onReady'] = (event) => {
+    event.target.pauseVideo();
+  };
 
-  // const opts: YouTubeProps['opts'] = {
-  //   // height: '500',
-  //   // width: '889',
-  //   playerVars: {
-  //     autoplay: 0,
-  //   },
-  // };
+  const opts: YouTubeProps['opts'] = {
+    // height: '500',
+    // width: '889',
+    playerVars: {
+      autoplay: 0,
+    },
+  };
 
   return (
     <div className="movies">
@@ -33,16 +32,15 @@ const Movies: FC<IPropsTypes> = (props) => {
           jakie są ich niewątpliwe zalety.
         </p>
         <div className="videoContainer">
-          {/* <YouTube videoId="chiXIU5FjlE" opts={opts} onReady={onPlayerReady} />; */}
           {/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
           <div onClick={() => setPlay(true)}>
             {play ? (
-              <ReactPlayer url="https://www.youtube.com/watch?v=chiXIU5FjlE" playing />
+              <YouTube videoId="chiXIU5FjlE" opts={opts} onReady={onPlayerReady} />
             ) : (
-              <img
-                src="https://img.youtube.com/vi/chiXIU5FjlE/maxresdefault.jpg"
-                alt="Video thumbnail"
-              />
+              <>
+                <div className="btn play">PLAY</div>
+                <Image src="/images/Image-400.jpg" alt="Video thumbnail" fill={true} />
+              </>
             )}
           </div>
         </div>

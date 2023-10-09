@@ -7,6 +7,7 @@
   font-weight: 700;
   outline: none;
   font-size: 1.5rem;
+  cursor: pointer;
   transition:
     background-color 0.3s ease-in-out,
     transform 0.1s ease-in-out,
@@ -62,5 +63,8 @@
       cursor: pointer;
     }
   }
+
+
+
 
 }

@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { FC, useState } from 'react';
+import YoutubePlayButton from '../public/images/YouTube_play_button_icon.svg';
 import YouTube, { YouTubeProps } from 'react-youtube';
 
 interface IPropsTypes {
@@ -38,7 +39,9 @@ const Movies: FC<IPropsTypes> = (props) => {
               <YouTube videoId="chiXIU5FjlE" opts={opts} onReady={onPlayerReady} />
             ) : (
               <>
-                <div className="btn play">PLAY</div>
+                <div className="play">
+                  <Image src={YoutubePlayButton} height={50} width={70} alt="Youtube play button" />
+                </div>
                 <Image src="/images/Image-400.jpg" alt="Video thumbnail" fill={true} />
               </>
             )}

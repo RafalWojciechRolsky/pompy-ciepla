@@ -3,6 +3,7 @@ import { promises as fs } from 'fs';
 
 import Hero from '@/components/Hero';
 import Logos from '@/components/Logos';
+import Image from 'next/image';
 
 interface HeroType {
   id: number;
@@ -33,6 +34,14 @@ const KlimatyzatoryPage = async () => {
             tajnikach klimatyzacji i wyborze odpowiedniego urządzenia do Twojego domu czy biura,
             koniecznie przeczytaj dalej!
           </p>
+          <Image
+            alt=""
+            src="/images/Image-306.jpg"
+            width={600}
+            height={380}
+            className="pumpSchema"
+            sizes="(min-width: 980px) 600px, 450px"
+          />
           <h3>Budowa i działanie klimatyzatora</h3>
           <p>Podstawowe elementy klimatyzatora to:</p>
           <ul>

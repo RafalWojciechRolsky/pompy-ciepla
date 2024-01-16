@@ -39,7 +39,7 @@ const Hero: FC<IPropsTypes> = async ({ title, points, imageUrl }) => {
               fill={true}
               placeholder="blur"
               blurDataURL={blurredDataUrl}
-              sizes="(min-width: 1460px) 435px, (min-width: 1220px) calc(54.55vw - 269px), (min-width: 980px) calc(54.55vw - 224px), (min-width: 640px) 56.25vw, 71.88vw"
+              sizes="(min-width: 1460px) 755px, (min-width: 1220px) calc(55.91vw - 268px), (min-width: 980px) calc(55.91vw - 222px), (min-width: 640px) 56.25vw, 71.88vw"
             />
           </figure>
         </div>

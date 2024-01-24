@@ -3,6 +3,7 @@ import { promises as fs } from 'fs';
 
 import Hero from '@/components/Hero';
 import Logos from '@/components/Logos';
+import Haier from '@/components/Producers/Haier/Haier';
 
 interface HeroType {
   id: number;
@@ -20,6 +21,9 @@ const ProducenciPage = async () => {
     <>
       <Hero title={hero[2].title} points={hero[2].points} imageUrl={hero[2].imageUrl} />
       <Logos />
+      <section className="producers">
+        <Haier />
+      </section>
     </>
   );
 };

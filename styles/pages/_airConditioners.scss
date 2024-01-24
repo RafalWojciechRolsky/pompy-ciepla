@@ -8,6 +8,11 @@
     margin: 0 auto;
     padding: 5rem 0;
 
+    @media screen and (max-width: $breakpoint-1200) {
+      width: 95%;
+      padding: 0 2rem;
+    }
+
     h2,
     h2,
     h3,
@@ -23,10 +28,18 @@
 
     h3 {
       font-size: 2.7rem;
+
+      @media screen and (max-width: $breakpoint-500) {
+        font-size: 2.5rem;
+      }
     }
 
     h4 {
       font-size: 2.5rem;
+
+      @media screen and (max-width: $breakpoint-500) {
+        font-size: 2.2rem;
+      }
     }
 
     p {
@@ -42,6 +55,30 @@
         font-size: 2.5rem;
         color: $third-300;
         display: inline-block;
+      }
+
+      @media screen and (max-width: $breakpoint-1200) {
+        font-size: 1.8rem;
+      }
+
+      @media screen and (max-width: $breakpoint-960) {
+        font-size: 1.7rem;
+      }
+    }
+
+    img {
+      margin: 2rem 0;
+
+      border-radius: 1rem;
+      box-shadow: $shadow;
+
+      @media screen and (max-width: $breakpoint-960) {
+        width: 45rem;
+      }
+
+      @media screen and (max-width: $breakpoint-500) {
+        width: 20rem;
+        height: 20rem;
       }
     }
   }

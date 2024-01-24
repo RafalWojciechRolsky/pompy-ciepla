@@ -39,7 +39,7 @@ const KlimatyzatoryPage = async () => {
             src="/images/Image-306.jpg"
             width={600}
             height={380}
-            className="pumpSchema"
+            className="climaSchema"
             sizes="(min-width: 980px) 600px, 450px"
           />
           <h3>Budowa i działanie klimatyzatora</h3>
@@ -60,6 +60,14 @@ const KlimatyzatoryPage = async () => {
             Schłodzony czynnik w postaci cieczy ponownie zostaje podany na parownik, gdzie się
             ogrzewa od powietrza w pomieszczeniu i przechodzi w stan gazowy.
           </p>
+          <Image
+            alt=""
+            src="/images/Image-303.jpg"
+            width={600}
+            height={380}
+            className="climaSchema"
+            sizes="(min-width: 980px) 600px, 450px"
+          />
           <h3>Rodzaje klimatyzatorów</h3>
           <p>
             Klimatyzatory dzielą się na różne typy, w zależności od budowy i rozwiązań montażowych.
@@ -67,6 +75,14 @@ const KlimatyzatoryPage = async () => {
             wewnętrznej i zewnętrznej – połączonych ze sobą linią chłodniczą. W obrębie
             klimatyzatorów typu split i multi-split można wyróżnić następujące rodzaje klimatyzacji:
           </p>
+          <Image
+            alt=""
+            src="/images/Image-304.jpg"
+            width={600}
+            height={380}
+            className="climaSchema"
+            sizes="(min-width: 980px) 600px, 450px"
+          />
           <ul>
             <li>klimatyzatory ścienne</li>
             <li>klimatyzatory ścienno-przysufitowe</li>
@@ -77,6 +93,14 @@ const KlimatyzatoryPage = async () => {
             Wybór konkretnego rodzaju klimatyzacji zależy od indywidualnych preferencji oraz efektu
             wizualnego, jaki chcemy osiągnąć.
           </p>
+          <Image
+            alt=""
+            src="/images/Image-307.jpg"
+            width={600}
+            height={380}
+            className="climaSchema"
+            sizes="(min-width: 980px) 600px, 450px"
+          />
           <h4>Klimatyzatory multi-split</h4>
           <p>
             Klimatyzatory typu multi-split to urządzenia klimatyzacyjne zbudowane tak samo jak
@@ -91,12 +115,28 @@ const KlimatyzatoryPage = async () => {
             przenoszenia pomiędzy różnymi pomieszczeniami, ale generują większy hałas w czasie pracy
             i mają niższą wydajność niż klimatyzatory stacjonarne.
           </p>
+          <Image
+            alt=""
+            src="/images/Image-301.jpg"
+            width={600}
+            height={380}
+            className="climaSchema"
+            sizes="(min-width: 980px) 600px, 450px"
+          />
           <h4>Klimatyzatory jako pompy ciepła</h4>
           <p>
             Warto zauważyć, że klimatyzatory mogą również działać jako pompy ciepła, dzięki
             odwróceniu układu chłodniczego. W takim przypadku parownik staje się skraplaczem, co
             pozwala na ogrzewanie pomieszczenia.
           </p>
+          <Image
+            alt=""
+            src="/images/Image-305.jpg"
+            width={600}
+            height={380}
+            className="climaSchema"
+            sizes="(min-width: 980px) 600px, 450px"
+          />
           <h3>Czyli klimatyzatory to to samo co pompy ciepła?</h3>
           <p>
             Klimatyzatory i pompy ciepła to nie są tożsame urządzenia, choć mają wiele wspólnych
@@ -119,13 +159,21 @@ const KlimatyzatoryPage = async () => {
             pomieszczeń oraz przygotowania ciepłej wody użytkowej. Pompy ciepła rozprowadzają chłód
             poprzez czynnik pośredni, czyli wodę krążącą w instalacji.
           </p>
+          <Image
+            alt=""
+            src="/images/Image-308.jpg"
+            width={600}
+            height={380}
+            className="climaSchema"
+            sizes="(min-width: 980px) 600px, 450px"
+          />
           <h4>Nowoczesne klimatyzatory inwerterowe</h4>
           <p>
             Warto zauważyć, że niektóre nowoczesne klimatyzatory, zwane klimatyzatorami
             inwerterowymi, wykorzystują technologię pomp ciepła do chłodzenia i ogrzewania
             pomieszczeń.
           </p>
-          <h4>Podsumowanie</h4>
+          <h3>Podsumowanie</h3>
           <p>
             Podsumowując, klimatyzatory i pompy ciepła to różne urządzenia, które mogą pełnić
             podobne funkcje, ale różnią się w sposobie, w jaki to robią i w zakresie ich zastosowań.

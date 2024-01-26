@@ -29,7 +29,7 @@ export default function RootLayout({
         <div id="page-wrap">
           <Header />
           <main>{children}</main>
-          <Testimonials />
+          {/* <Testimonials /> */}
           <Contact />
           <Footer />
         </div>

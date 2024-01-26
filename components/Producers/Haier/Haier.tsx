@@ -8,7 +8,7 @@ interface IPropsTypes {
 
 const Haier: FC<IPropsTypes> = (props) => {
   return (
-    <section className="haier__container">
+    <section>
       <h2>Haier</h2>
       <p>
         Historia firmy Haier: od momentu powstania w 1984 roku, firma jest prowadzona przez tego
@@ -31,16 +31,16 @@ const Haier: FC<IPropsTypes> = (props) => {
         które odpowiadają na stale zmieniające się potrzeby współczesnego domu, dając konsumentom
         więcej czasu na rzeczy, które są dla nich ważne.
       </p>
-      <div className="sub-section">
+      <div className="haier__sub-section">
         <Image
           alt=""
-          src="/images/Image-107.jpg"
-          width={600}
-          height={369}
-          className="pumpSchema"
-          sizes="(min-width: 980px) 600px, 450px"
+          src="/images/Image-haier.jpg"
+          width={452}
+          height={379}
+          className="haier__img"
+          sizes="(min-width: 452px)"
         />
-        <div className="sub-section__text">
+        <div className="text">
           <p>
             Produkty Haier są zbudowane z najwyższej jakości materiałów przez wysoko
             wykwalifikowanych inżynierów, zawierają najnowsze innowacje technologiczne, które

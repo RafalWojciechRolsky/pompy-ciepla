@@ -9,7 +9,7 @@ interface IPropsTypes {
   name?: string;
 }
 
-const MovieHaier: FC<IPropsTypes> = (props) => {
+const MovieRosento: FC<IPropsTypes> = (props) => {
   const [play, setPlay] = useState(false);
   const onPlayerReady: YouTubeProps['onReady'] = (event) => {
     event.target.pauseVideo();
@@ -26,18 +26,18 @@ const MovieHaier: FC<IPropsTypes> = (props) => {
   return (
     <div className="movies">
       <div className="movies__container">
-        <h3>Filmy o pompach ciepła firmy Haier</h3>
+        <h3>Filmy o pompach ciepła firmy Rosento</h3>
         <div className="videoContainer">
           {/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
           <div onClick={() => setPlay(true)}>
             {play ? (
-              <YouTube videoId="qkJsjZmW8cM" opts={opts} onReady={onPlayerReady} />
+              <YouTube videoId="X7RZJEE8Jh0" opts={opts} onReady={onPlayerReady} />
             ) : (
               <>
                 <div className="play">
                   <Image src={YoutubePlayButton} height={50} width={70} alt="Youtube play button" />
                 </div>
-                <Image src="/images/Image-haierCover.jpg" alt="Video thumbnail" fill={true} />
+                <Image src="/images/Image-rosentoCover.jpg" alt="Video thumbnail" fill={true} />
               </>
             )}
           </div>
@@ -47,4 +47,4 @@ const MovieHaier: FC<IPropsTypes> = (props) => {
   );
 };
 
-export default MovieHaier;
+export default MovieRosento;

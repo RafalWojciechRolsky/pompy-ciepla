@@ -14,6 +14,9 @@
     width: $globalWidth-1920;
     margin: 5rem 0;
 
+    div.panasonic__sub-section,
+    div.gree__sub-section,
+    div.rosento__sub-section,
     div.haier__sub-section {
       display: flex;
       flex-direction: row;
@@ -98,6 +101,9 @@
       }
     }
 
+    .panasonic__img,
+    .gree__img,
+    .rosento__img,
     .haier__img {
       border-radius: 1rem;
       box-shadow: $shadow;

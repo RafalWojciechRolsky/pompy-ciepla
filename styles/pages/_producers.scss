@@ -6,13 +6,47 @@
   align-items: center;
   background-color: $secondary-500;
 
+  section.gree,
+  section.haier,
+  section.rosento,
+  section.panasonic {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.haier {
+    background-color: $primary-200;
+  }
+
+  section.gree {
+    background-color: $secondary-200;
+  }
+
+  section.rosento {
+    background-color: $primary-300;
+  }
+
+  section.panasonic {
+    background-color: $secondary-100;
+  }
+
   section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    width: $globalWidth-1920;
-    margin: 5rem 0;
+
+
+    .haier__container,
+    .gree__container,
+    .rosento__container,
+    .panasonic__container {
+      width: $globalWidth-1920;
+      padding: 3rem 0;
+    }
 
     div.panasonic__sub-section,
     div.gree__sub-section,

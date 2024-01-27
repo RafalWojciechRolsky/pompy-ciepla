@@ -24,7 +24,7 @@ const Movies: FC<IPropsTypes> = (props) => {
   };
 
   return (
-    <div className="movies">
+    <section className="movies">
       <div className="movies__container">
         <h2>Filmy o pompach</h2>
         <p>
@@ -48,7 +48,7 @@ const Movies: FC<IPropsTypes> = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

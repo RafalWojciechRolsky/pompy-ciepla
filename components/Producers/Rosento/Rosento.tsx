@@ -10,7 +10,7 @@ interface IPropsTypes {
 
 const Rosento: FC<IPropsTypes> = (props) => {
   return (
-    <section className="">
+    <section className="rosento">
       <h2>Rosento</h2>
       <p>
         Rotenso konsekwentnie umacnia silną pozycję dostawcy nowoczesnych, niezawodnych i

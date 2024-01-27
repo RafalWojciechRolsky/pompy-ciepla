@@ -9,7 +9,7 @@ interface IPropsTypes {
 
 const Haier: FC<IPropsTypes> = (props) => {
   return (
-    <section>
+    <section className="haier">
       <h2>Haier</h2>
       <p>
         Historia firmy Haier: od momentu powstania w 1984 roku, firma jest prowadzona przez tego

@@ -6,6 +6,7 @@ import Logos from '@/components/Logos';
 import Haier from '@/components/Producers/Haier/Haier';
 import Rosento from '@/components/Producers/Rosento/Rosento';
 import Gree from '@/components/Producers/Gree/Gree';
+import Panasonic from '@/components/Producers/Panasonic/Panasonic';
 
 interface HeroType {
   id: number;
@@ -27,6 +28,7 @@ const ProducenciPage = async () => {
         <Haier />
         <Gree />
         <Rosento />
+        <Panasonic />
       </section>
     </>
   );

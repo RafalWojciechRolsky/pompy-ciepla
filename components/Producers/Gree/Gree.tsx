@@ -10,7 +10,7 @@ interface IPropsTypes {
 
 const Gree: FC<IPropsTypes> = (props) => {
   return (
-    <section className="">
+    <section className="gree">
       <h2>Gree</h2>
       <p>
         Historia Gree to historia firmy od małej manufaktury do największej na świecie firmy

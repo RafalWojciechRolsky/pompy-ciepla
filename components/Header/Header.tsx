@@ -44,9 +44,9 @@ const Header: FC<IPropsTypes> = () => {
             <li>
               <Link href={'/producenci'}>Producenci</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href={'/realizacje'}>Realizacje</Link>
-            </li>
+            </li> */}
             <li>
               <Link href={'/oferta'}>Oferta</Link>
             </li>

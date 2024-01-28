@@ -36,7 +36,7 @@ const Sidebar: FC<IPropsTypes> = () => {
             <Link href={'/about'}>O Nas</Link>
           </li> */}
           <li className="menu-item">
-            <Link href={'/#form-contact'}>Kontakt</Link>
+            <a href={'/#form-contact'}>Kontakt</a>
           </li>
         </ul>
       </nav>

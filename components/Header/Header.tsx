@@ -54,9 +54,9 @@ const Header: FC<IPropsTypes> = () => {
               <Link href={'/about'}>O Nas</Link>
             </li> */}
           </ul>
-          <Link href={'/#form-contact'} className="btn btn__contact">
+          <a href={'/#form-contact'} className="btn btn__contact">
             Kontakt
-          </Link>
+          </a>
         </nav>
       </div>
     </header>

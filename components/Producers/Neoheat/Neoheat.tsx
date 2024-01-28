@@ -10,7 +10,7 @@ interface IPropsTypes {
 
 const Neoheat: FC<IPropsTypes> = (props) => {
   return (
-    <section className="neoheat">
+    <section className="neoheat" id="neoheat">
       <div className="neoheat__container">
         <h2>NeoHeat</h2>
         <p>
@@ -37,8 +37,11 @@ const Neoheat: FC<IPropsTypes> = (props) => {
               Firma Neoheat jest częścią polskiej firmy Iglotech, która została założona w 1993 roku
               i ma swoją siedzibę w Kwidzynie. Neoheat oferuje również możliwość skorzystania z
               dofinansowania na zakup i montaż pomp ciepła w ramach programów wspierających
-              ekologiczne źródła energii. Produkty firmy są dostępne w różnych punktach sprzedaży
-              oraz można je nabyć za pośrednictwem dystrybutorów i sklepów internetowych.
+              ekologiczne źródła energii.
+            </p>
+            <p>
+              Produkty firmy są dostępne w różnych punktach sprzedaży oraz można je nabyć za
+              pośrednictwem dystrybutorów i sklepów internetowych.
             </p>
           </div>
           <Image

@@ -10,7 +10,7 @@ interface IPropsTypes {
 
 const Gree: FC<IPropsTypes> = (props) => {
   return (
-    <section className="gree">
+    <section className="gree" id="gree">
       <div className="gree__container">
         <h2>Gree</h2>
         <p>

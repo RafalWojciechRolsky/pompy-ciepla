@@ -58,6 +58,11 @@
     .panasonic__container {
       width: $globalWidth-1920;
       padding: 3rem 0;
+
+      @media screen and (max-width: $breakpoint-1200) {
+        width: 95%;
+        padding: 3rem 2rem;
+      }
     }
 
     div.heiko__sub-section,
@@ -78,9 +83,6 @@
 
       .text {
         padding: 4rem 0;
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
       }
     }
 

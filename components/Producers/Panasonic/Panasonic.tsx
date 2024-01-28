@@ -10,7 +10,7 @@ interface IPropsTypes {
 
 const Panasonic: FC<IPropsTypes> = (props) => {
   return (
-    <section className="panasonic">
+    <section className="panasonic" id="panasonic">
       <div className="panasonic__container">
         <h2>Panasonic</h2>
         <p>

@@ -8,7 +8,7 @@ interface IPropsTypes {
 
 const Heiko: FC<IPropsTypes> = (props) => {
   return (
-    <section className="heiko">
+    <section className="heiko" id="heiko">
       <div className="heiko__container">
         <h2>Heiko</h2>
         <p>

@@ -14,15 +14,16 @@
     padding: 5rem 0 7rem 0;
 
     @media screen and (max-width: $breakpoint-1200) {
-      padding: 5rem 10rem 5rem 10rem;
+      // padding: 5rem 10rem 5rem 10rem;
+      padding: 2rem 0rem;
     }
 
     @media screen and (max-width: $breakpoint-960) {
-      padding: 5rem;
+      padding: 4rem 2rem;
     }
 
     @media screen and (max-width: $breakpoint-500) {
-      padding: 5rem 2rem 5rem 2rem;
+      padding: 4rem 2rem;
     }
 
     h2 {

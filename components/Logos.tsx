@@ -16,26 +16,26 @@ const Logos: FC<IPropsTypes> = () => {
   return (
     <div className="logos">
       <div className="logos__section">
-        <Link href={'/#'}>
+        <Link href={'/producenci/#gree'}>
           <Image src={GreeLogo} alt="Gree" height={45} />
         </Link>
-        <Link href={'/#'}>
+        <Link href={'/producenci/#heiko'}>
           <Image src={Heiko} alt="Heiko" height={45} />
         </Link>
       </div>
       <div className="logos__section">
-        <Link href={'/#'}>
+        <Link href={'/producenci/#haier'}>
           <Image src={Haier} alt="Haier" height={45} />
         </Link>
-        <Link href={'/#'}>
+        <Link href={'/producenci/#rosento'}>
           <Image src={Rotenso} alt="Rotenso" height={45} />
         </Link>
       </div>
       <div className="logos__section">
-        <Link href={'/#'}>
+        <Link href={'/producenci/#panasonic'}>
           <Image src={Panasonic} alt="Panasonic" height={45} />
         </Link>
-        <Link href={'/#'}>
+        <Link href={'/producenci/#neoheat'}>
           <Image src={Neoheat} alt="Neoheat" height={45} />
         </Link>
       </div>

@@ -9,7 +9,7 @@ interface IPropsTypes {
 
 const Haier: FC<IPropsTypes> = (props) => {
   return (
-    <section className="haier">
+    <section className="haier" id="haier">
       <div className="haier__container">
         <h2>Haier</h2>
         <p>

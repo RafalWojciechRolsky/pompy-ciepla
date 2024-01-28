@@ -10,7 +10,7 @@ interface IPropsTypes {
 
 const Rosento: FC<IPropsTypes> = (props) => {
   return (
-    <section className="rosento">
+    <section className="rosento" id="rosento">
       <div className="rosento__container">
         <h2>Rosento</h2>
         <p>
@@ -40,10 +40,10 @@ const Rosento: FC<IPropsTypes> = (props) => {
           <Image
             alt=""
             src="/images/Image-rosento.jpg"
-            width={700}
-            height={812}
+            width={500}
+            height={612}
             className="rosento__img"
-            sizes="(min-width: 700px)"
+            sizes="(min-width: 500px)"
           />
           <div className="text">
             <h3>Zakres urządzeń i zastosowań</h3>

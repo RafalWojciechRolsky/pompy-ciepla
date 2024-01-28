@@ -6,7 +6,6 @@ import Rotenso from '../public/images/Rotenso_logo.svg';
 import Heiko from '../public/images/Heiko_logo.svg';
 import Neoheat from '../public/images/Neoheat_logo.svg';
 import Image from 'next/image';
-import Link from 'next/link';
 
 interface IPropsTypes {
   name?: string;
@@ -16,28 +15,28 @@ const Logos: FC<IPropsTypes> = () => {
   return (
     <div className="logos">
       <div className="logos__section">
-        <Link href={'/producenci/#gree'}>
+        <a href={'/producenci/#gree'}>
           <Image src={GreeLogo} alt="Gree" height={45} />
-        </Link>
-        <Link href={'/producenci/#heiko'}>
+        </a>
+        <a href={'/producenci/#heiko'}>
           <Image src={Heiko} alt="Heiko" height={45} />
-        </Link>
+        </a>
       </div>
       <div className="logos__section">
-        <Link href={'/producenci/#haier'}>
+        <a href={'/producenci/#haier'}>
           <Image src={Haier} alt="Haier" height={45} />
-        </Link>
-        <Link href={'/producenci/#rosento'}>
+        </a>
+        <a href={'/producenci/#rosento'}>
           <Image src={Rotenso} alt="Rotenso" height={45} />
-        </Link>
+        </a>
       </div>
       <div className="logos__section">
-        <Link href={'/producenci/#panasonic'}>
+        <a href={'/producenci/#panasonic'}>
           <Image src={Panasonic} alt="Panasonic" height={45} />
-        </Link>
-        <Link href={'/producenci/#neoheat'}>
+        </a>
+        <a href={'/producenci/#neoheat'}>
           <Image src={Neoheat} alt="Neoheat" height={45} />
-        </Link>
+        </a>
       </div>
     </div>
   );

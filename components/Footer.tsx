@@ -13,13 +13,13 @@ const Footer: FC<IPropsTypes> = (props) => {
       <div className="footer__container">
         <Logo phone={false} />
         <nav>
-          <Link href="/" className="regulamin">
+          <Link href="/regulamin" className="regulamin">
             Regulamin
           </Link>
-          <Link href="/" className="regulamin">
+          <Link href="/polityka-prywatnosci" className="regulamin">
             Polityka Prywatności
           </Link>
-          <Link href="/" className="regulamin">
+          <Link href="/cookies" className="regulamin">
             Ustawienia Cookies
           </Link>
         </nav>

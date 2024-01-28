@@ -72,7 +72,8 @@ const Form: FC<IPropsTypes> = (props) => {
         <div className="submit">
           <label htmlFor="submitButton">
             <span>
-              Wysyłając formularz zgadzasz się z <Link href={'/'}>Polityką Prywatności</Link>
+              Wysyłając formularz zgadzasz się z{' '}
+              <Link href={'/polityka-prywatnosci'}>Polityką Prywatności</Link>
             </span>
           </label>
           <button type="submit" className="btn btn--form">

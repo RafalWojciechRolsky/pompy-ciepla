@@ -50,9 +50,9 @@ const Header: FC<IPropsTypes> = () => {
             <li>
               <Link href={'/oferta'}>Oferta</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href={'/about'}>O Nas</Link>
-            </li>
+            </li> */}
           </ul>
           <Link href={'/#form-contact'} className="btn btn__contact">
             Kontakt

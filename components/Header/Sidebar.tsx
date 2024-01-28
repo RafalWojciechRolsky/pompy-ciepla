@@ -32,9 +32,9 @@ const Sidebar: FC<IPropsTypes> = () => {
           <li className="menu-item">
             <Link href={'/oferta'}>Oferta</Link>
           </li>
-          <li className="menu-item">
+          {/* <li className="menu-item">
             <Link href={'/about'}>O Nas</Link>
-          </li>
+          </li> */}
           <li className="menu-item">
             <Link href={'/#form-contact'}>Kontakt</Link>
           </li>

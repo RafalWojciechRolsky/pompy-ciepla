@@ -7,6 +7,7 @@ import Haier from '@/components/Producers/Haier/Haier';
 import Rosento from '@/components/Producers/Rosento/Rosento';
 import Gree from '@/components/Producers/Gree/Gree';
 import Panasonic from '@/components/Producers/Panasonic/Panasonic';
+import Neoheat from '@/components/Producers/Neoheat/Neoheat';
 
 interface HeroType {
   id: number;
@@ -25,6 +26,7 @@ const ProducenciPage = async () => {
       <Hero title={hero[2].title} points={hero[2].points} imageUrl={hero[2].imageUrl} />
       <Logos />
       <section className="producers">
+        <Neoheat />
         <Haier />
         <Gree />
         <Rosento />

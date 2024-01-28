@@ -8,6 +8,7 @@ import Rosento from '@/components/Producers/Rosento/Rosento';
 import Gree from '@/components/Producers/Gree/Gree';
 import Panasonic from '@/components/Producers/Panasonic/Panasonic';
 import Neoheat from '@/components/Producers/Neoheat/Neoheat';
+import Heiko from '@/components/Producers/Heiko/Heiko';
 
 interface HeroType {
   id: number;
@@ -31,6 +32,7 @@ const ProducenciPage = async () => {
         <Gree />
         <Rosento />
         <Panasonic />
+        <Heiko />
       </section>
     </>
   );

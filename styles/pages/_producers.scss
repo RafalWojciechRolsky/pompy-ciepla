@@ -6,6 +6,7 @@
   align-items: center;
   background-color: $secondary-500;
 
+  section.heiko,
   section.neoheat,
   section.gree,
   section.haier,
@@ -24,6 +25,10 @@
 
   section.haier {
     background-color: $primary-200;
+  }
+
+  section.heiko {
+    background-color: $primary-100;
   }
 
   section.gree {
@@ -45,6 +50,7 @@
     gap: 2rem;
 
 
+    .heiko__container,
     .neoheat__container,
     .haier__container,
     .gree__container,
@@ -54,6 +60,7 @@
       padding: 3rem 0;
     }
 
+    div.heiko__sub-section,
     div.neoheat__sub-section,
     div.panasonic__sub-section,
     div.gree__sub-section,
@@ -142,6 +149,8 @@
       }
     }
 
+    .neoheat__img,
+    .heiko__img,
     .panasonic__img,
     .gree__img,
     .rosento__img,

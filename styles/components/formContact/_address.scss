@@ -7,9 +7,10 @@
   gap: 2rem;
 
   &__container {
-    h5 {
+    h4 {
       text-align: center;
       text-shadow: $shadow;
+      font-size: 3.1rem;
 
       @media screen and (max-width: $breakpoint-500) {
         font-size: 2.5rem;

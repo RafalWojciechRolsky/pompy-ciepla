@@ -33,7 +33,7 @@ const Address = async () => {
   return (
     <section className="address">
       <div className="address__container">
-        <h5> {jsonData.name}</h5>
+        <h4> {jsonData.name}</h4>
         <address>
           <div id="leftAddress">
             <dl>

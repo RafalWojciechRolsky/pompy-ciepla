@@ -25,10 +25,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
+        {/* <link
           rel="stylesheet"
           href="https://justreview.co/widget/justreview.css"
-        />
+        /> */}
       </head>
       <body className={ubuntu.className} id="outer-container">
         <Sidebar />

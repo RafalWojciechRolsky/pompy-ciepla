@@ -49,7 +49,7 @@ const Address = async () => {
                 {jsonData.address.postalCode}, Polska
               </dd>
 
-              <span>
+              <div style={{ display: "inline-flex" }}>
                 <dt>
                   <MdOutlineTextSnippet
                     size={12}
@@ -57,10 +57,10 @@ const Address = async () => {
                   />
                 </dt>
                 <dd>{jsonData.nip}</dd>
-              </span>
+              </div>
             </div>
             <div>
-              <span>
+              <div style={{ display: "inline-flex" }}>
                 <dt>
                   <FaRegClock size={12} style={{ marginRight: "1rem" }} />
                 </dt>
@@ -69,8 +69,8 @@ const Address = async () => {
                   <br />
                   9:00 -18:00
                 </dd>
-              </span>
-              <span>
+              </div>
+              <div style={{ display: "inline-flex" }}>
                 <dt>
                   <FaPhoneAlt size={12} style={{ marginRight: "1rem" }} />
                 </dt>
@@ -79,16 +79,16 @@ const Address = async () => {
                     {jsonData.phone}
                   </a>
                 </dd>
-              </span>
+              </div>
 
-              <span>
+              <div style={{ display: "inline-flex" }}>
                 <dt>
                   <SiMaildotru size={12} style={{ marginRight: "1rem" }} />
                 </dt>
                 <dd>
                   <a href={`mailto:${jsonData.mail}`}>{jsonData.mail}</a>
                 </dd>
-              </span>
+              </div>
             </div>
           </dl>
         </address>

@@ -24,13 +24,19 @@ const Footer: FC<IPropsTypes> = (props) => {
           </Link>
         </nav>
         <div className="socials">
-          <Link href="https://www.instagram.com/">
+          <Link
+            href="https://www.instagram.com/"
+            aria-label="Profil na Instagram"
+          >
             <FaInstagram className="social-icons" />
           </Link>
-          <Link href="https://www.facebook.com/">
+          <Link
+            href="https://www.facebook.com/"
+            aria-label="Profil na Facebook"
+          >
             <FaFacebookSquare className="social-icons" />
           </Link>
-          <Link href="https://www.linkedin.com/">
+          <Link href="https://www.linkedin.com/" aria-label="profil na Linkein">
             <FaLinkedin className="social-icons" />
           </Link>
         </div>

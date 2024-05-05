@@ -35,8 +35,8 @@ const Address = async () => {
       <div className="address__container">
         <h5> {jsonData.name}</h5>
         <address>
-          <dl>
-            <div>
+          <div id="leftAddress">
+            <dl>
               <dt>
                 <FaMapMarkerAlt size={12} style={{ marginRight: "1rem" }} />
                 Adres
@@ -48,49 +48,49 @@ const Address = async () => {
                 <br />
                 {jsonData.address.postalCode}, Polska
               </dd>
+            </dl>
 
-              <div style={{ display: "inline-flex" }}>
-                <dt>
-                  <MdOutlineTextSnippet
-                    size={12}
-                    style={{ marginRight: "1rem" }}
-                  />
-                </dt>
-                <dd>{jsonData.nip}</dd>
-              </div>
-            </div>
-            <div>
-              <div style={{ display: "inline-flex" }}>
-                <dt>
-                  <FaRegClock size={12} style={{ marginRight: "1rem" }} />
-                </dt>
-                <dd>
-                  Pon - Piątek
-                  <br />
-                  9:00 -18:00
-                </dd>
-              </div>
-              <div style={{ display: "inline-flex" }}>
-                <dt>
-                  <FaPhoneAlt size={12} style={{ marginRight: "1rem" }} />
-                </dt>
-                <dd>
-                  <a href={`tel:${formatPhone(jsonData.phone)}`}>
-                    {jsonData.phone}
-                  </a>
-                </dd>
-              </div>
+            <dl>
+              <dt>
+                <MdOutlineTextSnippet
+                  size={12}
+                  style={{ marginRight: "1rem" }}
+                />
+              </dt>
+              <dd>{jsonData.nip}</dd>
+            </dl>
+          </div>
+          <div id="rightAddress">
+            <dl>
+              <dt>
+                <FaRegClock size={12} style={{ marginRight: "1rem" }} />
+              </dt>
+              <dd>
+                Pon - Piątek
+                <br />
+                9:00 -18:00
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <FaPhoneAlt size={12} style={{ marginRight: "1rem" }} />
+              </dt>
+              <dd>
+                <a href={`tel:${formatPhone(jsonData.phone)}`}>
+                  {jsonData.phone}
+                </a>
+              </dd>
+            </dl>
 
-              <div style={{ display: "inline-flex" }}>
-                <dt>
-                  <SiMaildotru size={12} style={{ marginRight: "1rem" }} />
-                </dt>
-                <dd>
-                  <a href={`mailto:${jsonData.mail}`}>{jsonData.mail}</a>
-                </dd>
-              </div>
-            </div>
-          </dl>
+            <dl>
+              <dt>
+                <SiMaildotru size={12} style={{ marginRight: "1rem" }} />
+              </dt>
+              <dd>
+                <a href={`mailto:${jsonData.mail}`}>{jsonData.mail}</a>
+              </dd>
+            </dl>
+          </div>
         </address>
       </div>
       <div className="address__mapContainer">

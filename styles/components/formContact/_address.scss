@@ -1,4 +1,4 @@
-@import '../../abstracts/variables';
+@import "../../abstracts/variables";
 
 .address {
   display: flex;
@@ -7,7 +7,6 @@
   gap: 2rem;
 
   &__container {
-
     h5 {
       text-align: center;
       text-shadow: $shadow;
@@ -23,42 +22,53 @@
     }
 
     address {
+      margin-top: 2rem;
       margin-left: 5rem;
       font-style: normal;
       line-height: 2.5rem;
-
-    }
-
-    dl {
       display: flex;
-      margin-top: 2rem;
+      align-items: baseline;
+
+      div#leftAddress {
+        flex: 1;
+
+        dl:nth-of-type(2) {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+
+      div#rightAddress {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        dl {
+          display: inline-flex;
+          flex-direction: row;
+        }
+      }
 
       @media screen and (max-width: $breakpoint-500) {
         flex-direction: column;
+        gap: 2rem;
         justify-content: center;
       }
-
-      &>div>dd {
-        margin-left: 2.2rem;
-      }
-
-      div {
-        flex: 1;
-
-        @media screen and (max-width: $breakpoint-500) {
-          justify-content: center;
-        }
-
-        span {
-          display: flex;
-        }
-      }
     }
+
+    //   div {
+    //     flex: 1;
+
+    //     @media screen and (max-width: $breakpoint-500) {
+    //       justify-content: center;
+    //     }
+
+    //   }
+    // }
   }
 
   &__mapContainer {
     height: 27rem;
     position: relative;
   }
-
 }

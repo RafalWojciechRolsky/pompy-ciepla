@@ -1,7 +1,7 @@
-import { FC } from 'react';
-import Logo from './Logo';
-import Link from 'next/link';
-import { FaFacebookSquare, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import Link from "next/link";
+import { FC } from "react";
+import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
+import Logo from "./Logo";
 
 interface IPropsTypes {
   name?: string;
@@ -24,13 +24,13 @@ const Footer: FC<IPropsTypes> = (props) => {
           </Link>
         </nav>
         <div className="socials">
-          <Link href="/">
+          <Link href="https://www.instagram.com/">
             <FaInstagram className="social-icons" />
           </Link>
-          <Link href="/">
+          <Link href="https://www.facebook.com/">
             <FaFacebookSquare className="social-icons" />
           </Link>
-          <Link href="/">
+          <Link href="https://www.linkedin.com/">
             <FaLinkedin className="social-icons" />
           </Link>
         </div>

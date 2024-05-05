@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 const PrivacyPolicyPage = async () => {
   return (
     <>
@@ -32,62 +34,71 @@ const PrivacyPolicyPage = async () => {
 
           <h3>1. Wprowadzenie</h3>
           <p>
-            Firma <strong>Pompy Ciepła 4 You</strong> (zwana dalej &quot;Firmą&quot;) zobowiązuje
-            się do ochrony prywatności swoich klientów i użytkowników serwisu. Niniejsza Polityka
-            Prywatności określa zasady przetwarzania i ochrony danych osobowych przekazywanych przez
-            Użytkowników w związku z korzystaniem z usług firmy.
+            Firma <strong>Pompy Ciepła 4 You</strong> (zwana dalej
+            &quot;Firmą&quot;) zobowiązuje się do ochrony prywatności swoich
+            klientów i użytkowników serwisu. Niniejsza Polityka Prywatności
+            określa zasady przetwarzania i ochrony danych osobowych
+            przekazywanych przez Użytkowników w związku z korzystaniem z usług
+            firmy.
           </p>
 
           <h3>2. Administrator danych</h3>
           <p>
-            Administratorem danych osobowych jest <strong>Pompy Ciepła 4 You</strong> z siedzibą
-            przy ul. Nawoja 20, Nawojowa Góra, 33-333 Polska.
+            Administratorem danych osobowych jest{" "}
+            <strong>Pompy Ciepła 4 You</strong> z siedzibą przy ul. Nawoja 20,
+            Nawojowa Góra, 33-333 Polska.
           </p>
 
           <h3>3. Zakres i cel przetwarzania danych</h3>
           <p>
-            Dane osobowe przetwarzane są w celu realizacji usług oferowanych przez Firmę, w tym
-            m.in. w celu obsługi zapytań klientów, realizacji umów sprzedaży, prowadzenia działań
-            marketingowych, zgodnie z wyrażonymi zgodami. Dane mogą być również przetwarzane w celu
+            Dane osobowe przetwarzane są w celu realizacji usług oferowanych
+            przez Firmę, w tym m.in. w celu obsługi zapytań klientów, realizacji
+            umów sprzedaży, prowadzenia działań marketingowych, zgodnie z
+            wyrażonymi zgodami. Dane mogą być również przetwarzane w celu
             wypełnienia obowiązków prawnych ciążących na Firmie.
           </p>
 
           <h3>4. Rodzaj zbieranych danych</h3>
           <p>
-            Firma może zbierać następujące dane osobowe Użytkowników: imię i nazwisko, adres e-mail,
-            numer telefonu, adres dostawy, dane dotyczące płatności.
+            Firma może zbierać następujące dane osobowe Użytkowników: imię i
+            nazwisko, adres e-mail, numer telefonu, adres dostawy, dane
+            dotyczące płatności.
           </p>
           <h3>5. Prawa osoby, której dane dotyczą</h3>
           <p>
-            Każdy Użytkownik ma prawo dostępu do swoich danych, ich sprostowania, usunięcia lub
-            ograniczenia przetwarzania, a także prawo do wniesienia sprzeciwu wobec przetwarzania,
-            prawo do przenoszenia danych oraz prawo do cofnięcia zgody na przetwarzanie danych
-            osobowych.
+            Każdy Użytkownik ma prawo dostępu do swoich danych, ich
+            sprostowania, usunięcia lub ograniczenia przetwarzania, a także
+            prawo do wniesienia sprzeciwu wobec przetwarzania, prawo do
+            przenoszenia danych oraz prawo do cofnięcia zgody na przetwarzanie
+            danych osobowych.
           </p>
 
           <h3>6. Okres przechowywania danych</h3>
           <p>
-            Dane osobowe będą przechowywane przez okres niezbędny do realizacji celów, dla których
-            zostały zebrane, z zastrzeżeniem wymogów prawnych dotyczących przechowywania danych dla
-            celów rachunkowych i podatkowych.
+            Dane osobowe będą przechowywane przez okres niezbędny do realizacji
+            celów, dla których zostały zebrane, z zastrzeżeniem wymogów prawnych
+            dotyczących przechowywania danych dla celów rachunkowych i
+            podatkowych.
           </p>
 
           <h3>7. Bezpieczeństwo danych</h3>
           <p>
-            Firma stosuje środki techniczne i organizacyjne mające na celu ochronę przetwarzanych
-            danych osobowych przed nieuprawnionym dostępem, utratą lub uszkodzeniem.
+            Firma stosuje środki techniczne i organizacyjne mające na celu
+            ochronę przetwarzanych danych osobowych przed nieuprawnionym
+            dostępem, utratą lub uszkodzeniem.
           </p>
 
           <h3>8. Zmiany w polityce prywatności</h3>
           <p>
-            Polityka Prywatności może być aktualizowana. O wszelkich zmianach Użytkownicy zostaną
-            poinformowani drogą elektroniczną.
+            Polityka Prywatności może być aktualizowana. O wszelkich zmianach
+            Użytkownicy zostaną poinformowani drogą elektroniczną.
           </p>
           <h3>9. Kontakt</h3>
           <p>
-            W sprawach dotyczących przetwarzania danych osobowych prosimy o kontakt pod adresem
-            e-mail: <a href="mailto:mojmail@gmail.com">mojmail@gmail.com</a> lub telefonicznie pod
-            numerami +48 111-222-33-44, +48 999-888-777.
+            W sprawach dotyczących przetwarzania danych osobowych prosimy o
+            kontakt pod adresem e-mail:{" "}
+            <a href="mailto:mojmail@gmail.com">mojmail@gmail.com</a> lub
+            telefonicznie pod numerami +48 111-222-33-44, +48 999-888-777.
           </p>
         </div>
       </section>
@@ -96,3 +107,77 @@ const PrivacyPolicyPage = async () => {
 };
 
 export default PrivacyPolicyPage;
+
+////////////////////////// Metadata
+
+const title = "Polityka prywatności | Pompy Ciepła 4 You | Ciepło z natury";
+const description =
+  "Dowiedz się, jak Pompy Ciepła 4 You chroni Twoje dane. Przeczytaj naszą Politykę Prywatności, aby poznać zasady przetwarzania i ochrony Twoich danych.";
+const siteUrl = "https://pompyciepla4you.pl";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title,
+    description,
+    applicationName: "Pompy Ciepła 4 You",
+    referrer: "origin-when-cross-origin",
+    keywords: [
+      "Polityka prywatności",
+      "klimatyzatory",
+      "ekologiczne ogrzewanie",
+      "oszczędność energii",
+      "redukcja CO2",
+    ],
+    authors: [{ name: "Pompy Ciepła 4 You", url: siteUrl }],
+    creator: "Pompy Ciepła 4 You",
+    publisher: "Pompy Ciepła 4 You",
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      url: siteUrl,
+      siteName: "Pompy Ciepła 4 You",
+      images: [
+        {
+          url: `/images/openGraph.jpg`,
+          width: 1200,
+          height: 630,
+          alt: "Pompy Ciepła 4 You - Ciepło z natury",
+        },
+      ],
+      locale: "pl_PL",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      creator: "@PompyCiepla4You",
+      images: [
+        {
+          url: `/images/twitter.jpg`,
+          width: 1200,
+          height: 675,
+          alt: "Pompy Ciepła 4 You - Ciepło z natury",
+        },
+      ],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      nocache: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        noimageindex: false,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+  };
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Pompy 4 You",
+  "address": {
+    "city": "Nawojowa Góra",
+    "country": "Polska",
+    "postalCode": "32-065",
+    "streetAdress": "ul. Nawoja 20"
+  },
+  "phone": "+48 609-116-300",
+  "mail": "kontakt@pompy4you.pl",
+  "nip": "123-456-78-90"
+}

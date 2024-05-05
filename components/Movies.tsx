@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { FC, useState } from 'react';
-import YoutubePlayButton from '../public/images/YouTube_play_button_icon.svg';
-import YouTube, { YouTubeProps } from 'react-youtube';
+import Image from "next/image";
+import { FC, useState } from "react";
+import YouTube, { YouTubeProps } from "react-youtube";
+import YoutubePlayButton from "../public/images/YouTube_play_button_icon.svg";
 
 interface IPropsTypes {
   name?: string;
@@ -11,11 +11,11 @@ interface IPropsTypes {
 
 const Movies: FC<IPropsTypes> = (props) => {
   const [play, setPlay] = useState(false);
-  const onPlayerReady: YouTubeProps['onReady'] = (event) => {
+  const onPlayerReady: YouTubeProps["onReady"] = (event) => {
     event.target.pauseVideo();
   };
 
-  const opts: YouTubeProps['opts'] = {
+  const opts: YouTubeProps["opts"] = {
     // height: '500',
     // width: '889',
     playerVars: {
@@ -28,21 +28,35 @@ const Movies: FC<IPropsTypes> = (props) => {
       <div className="movies__container">
         <h2>Filmy o pompach</h2>
         <p>
-          Czasem najlepiej jest zamiast poczytać zobaczyć o co chodzi bo jeden obraz jest wart
-          tysiąca słów. Polecamy zobaczyć filmy kompetentnie traktujące o tym czym są pompy ciepła i
-          jakie są ich niewątpliwe zalety.
+          Czasem najlepiej jest zamiast poczytać zobaczyć o co chodzi bo jeden
+          obraz jest wart tysiąca słów. Polecamy zobaczyć filmy kompetentnie
+          traktujące o tym czym są pompy ciepła i jakie są ich niewątpliwe
+          zalety.
         </p>
         <div className="videoContainer">
           {/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
           <div onClick={() => setPlay(true)}>
             {play ? (
-              <YouTube videoId="chiXIU5FjlE" opts={opts} onReady={onPlayerReady} />
+              <YouTube
+                videoId="wNXVGf-u9bQ"
+                opts={opts}
+                onReady={onPlayerReady}
+              />
             ) : (
               <>
                 <div className="play">
-                  <Image src={YoutubePlayButton} height={50} width={70} alt="Youtube play button" />
+                  <Image
+                    src={YoutubePlayButton}
+                    height={50}
+                    width={70}
+                    alt="Youtube play button"
+                  />
                 </div>
-                <Image src="/images/Image-400.jpg" alt="Video thumbnail" fill={true} />
+                <Image
+                  src="/images/Image-400.jpg"
+                  alt="Video thumbnail"
+                  fill={true}
+                />
               </>
             )}
           </div>

@@ -15,6 +15,7 @@ const ubuntu = Ubuntu({
 export const metadata: Metadata = {
   title: "Pompy Ciepła",
   description: "Strona firmy instalacyjnej - Pompy4You",
+  metadataBase: new URL(process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://pompy4you.pl"),
 };
 
 export default function RootLayout({

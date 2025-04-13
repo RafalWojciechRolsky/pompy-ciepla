@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  publicRuntimeConfig: {
-    metadataBase: "https://pompy4you.pl",
-    metadata: {
-      metadataBase: "https://pompy4you.pl",
-    },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'pompy4you.pl',
+      },
+    ],
   },
 };
 

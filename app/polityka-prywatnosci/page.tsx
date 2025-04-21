@@ -6,7 +6,7 @@ const PrivacyPolicyPage = async () => {
       <section className="privacyPolicy">
         <div className="privacyPolicy__container">
           <h1>Polityka Prywatności</h1>
-          <h2>Pompy Ciepła 4 You</h2>
+          <h2>Pompa Ciepła 4 You</h2>
           <dl>
             <div>
               <dd>
@@ -34,7 +34,7 @@ const PrivacyPolicyPage = async () => {
 
           <h3>1. Wprowadzenie</h3>
           <p>
-            Firma <strong>Pompy Ciepła 4 You</strong> (zwana dalej
+            Firma <strong>Pompa Ciepła 4 You</strong> (zwana dalej
             &quot;Firmą&quot;) zobowiązuje się do ochrony prywatności swoich
             klientów i użytkowników serwisu. Niniejsza Polityka Prywatności
             określa zasady przetwarzania i ochrony danych osobowych
@@ -45,7 +45,7 @@ const PrivacyPolicyPage = async () => {
           <h3>2. Administrator danych</h3>
           <p>
             Administratorem danych osobowych jest{" "}
-            <strong>Pompy Ciepła 4 You</strong> z siedzibą przy ul. Nawoja 20,
+            <strong>Pompa Ciepła 4 You</strong> z siedzibą przy ul. Nawoja 20,
             Nawojowa Góra, 32-065; Polska.
           </p>
 
@@ -110,16 +110,16 @@ export default PrivacyPolicyPage;
 
 ////////////////////////// Metadata
 
-const title = "Polityka prywatności | Pompy Ciepła 4 You | Ciepło z natury";
+const title = "Polityka prywatności | Pompa Ciepła 4 You | Ciepło z natury";
 const description =
-  "Dowiedz się, jak Pompy Ciepła 4 You chroni Twoje dane. Przeczytaj naszą Politykę Prywatności, aby poznać zasady przetwarzania i ochrony Twoich danych.";
-const siteUrl = "https://pompyciepla4you.pl";
+  "Dowiedz się, jak Pompa Ciepła 4 You chroni Twoje dane. Przeczytaj naszą Politykę Prywatności, aby poznać zasady przetwarzania i ochrony Twoich danych.";
+const siteUrl = "https://pompaciepla4you.pl";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title,
     description,
-    applicationName: "Pompy Ciepła 4 You",
+    applicationName: "Pompa Ciepła 4 You",
     referrer: "origin-when-cross-origin",
     keywords: [
       "Polityka prywatności",
@@ -128,9 +128,9 @@ export async function generateMetadata(): Promise<Metadata> {
       "oszczędność energii",
       "redukcja CO2",
     ],
-    authors: [{ name: "Pompy Ciepła 4 You", url: siteUrl }],
-    creator: "Pompy Ciepła 4 You",
-    publisher: "Pompy Ciepła 4 You",
+    authors: [{ name: "Pompa Ciepła 4 You", url: siteUrl }],
+    creator: "Pompa Ciepła 4 You",
+    publisher: "Pompa Ciepła 4 You",
     formatDetection: {
       email: false,
       address: false,
@@ -141,13 +141,13 @@ export async function generateMetadata(): Promise<Metadata> {
       description,
       type: "website",
       url: siteUrl,
-      siteName: "Pompy Ciepła 4 You",
+      siteName: "Pompa Ciepła 4 You",
       images: [
         {
           url: `/images/openGraph.jpg`,
           width: 1200,
           height: 630,
-          alt: "Pompy Ciepła 4 You - Ciepło z natury",
+          alt: "Pompa Ciepła 4 You - Ciepło z natury",
         },
       ],
       locale: "pl_PL",
@@ -156,13 +156,13 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title,
       description,
-      creator: "@PompyCiepla4You",
+      creator: "@PompaCiepla4You",
       images: [
         {
           url: `/images/twitter.jpg`,
           width: 1200,
           height: 675,
-          alt: "Pompy Ciepła 4 You - Ciepło z natury",
+          alt: "Pompa Ciepła 4 You - Ciepło z natury",
         },
       ],
     },

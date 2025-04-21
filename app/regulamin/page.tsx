@@ -47,12 +47,112 @@ const ConditionsPage = async () => {
             roboczych od daty otrzymania.
           </p>
 
-          <h3>5. Ochrona danych osobowych</h3>
+          <h3>5. Ochrona danych osobowych i RODO</h3>
           <p>
-            Administratorem danych osobowych przetwarzanych w związku z
-            korzystaniem ze strony jest <strong>Pompa Ciepła 4 You</strong>.
-            Szczegółowe informacje dotyczące przetwarzania danych osobowych
-            zawarte są w Polityce Prywatności.
+            <h4>5.1. Administrator danych osobowych</h4><br />
+            Administratorem danych osobowych przetwarzanych w związku z korzystaniem ze strony internetowej pompaciepla4you.pl jest <strong>KSW Andrzej Wolak</strong> z siedzibą przy ul. Nawoja 20, Nawojowa Góra, 32-065, Polska, zwany dalej "Administratorem".
+          </p>
+
+          <p>
+            <h4>5.2. Chatbot AI - informacje ogólne</h4><br />
+            Na stronie pompaciepla4you.pl działa chatbot AI, będący automatycznym narzędziem komunikacji opartym na sztucznej inteligencji. Chatbot nie jest człowiekiem, lecz programem komputerowym zaprojektowanym do prowadzenia rozmów z użytkownikami i udzielania informacji o produktach i usługach. Korzystanie z chatbota jest dobrowolne.
+          </p>
+
+          <p>
+            <h4>5.3. Rodzaje zbieranych danych</h4><br />
+            W trakcie korzystania z chatbota oraz strony internetowej mogą być zbierane następujące dane osobowe:
+          </p>
+          <ul>
+            <li>Imię</li>
+            <li>Adres e-mail</li>
+            <li>Numer telefonu</li>
+          </ul>
+
+          <p>
+            <h4>5.4. Cel i podstawa prawna przetwarzania danych</h4><br />
+            Dane osobowe zbierane przez chatbota oraz stronę internetową są przetwarzane w celu:
+          </p>
+          <ul>
+            <li>Udzielenia odpowiedzi na pytania i zapytania użytkownika</li>
+            <li>Przedstawienia oferty handlowej</li>
+            <li>Nawiązania kontaktu w sprawie usług lub produktów</li>
+            <li>Prowadzenia marketingu bezpośredniego</li>
+            <li>Poprawy jakości usług</li>
+          </ul>
+          <p>
+            Podstawą prawną przetwarzania danych osobowych jest:
+          </p>
+          <ul>
+            <li>Zgoda użytkownika (art. 6 ust. 1 lit. a RODO)</li>
+            <li>Niezbędność do wykonania umowy lub podjęcia działań przed jej zawarciem (art. 6 ust. 1 lit. b RODO)</li>
+            <li>Uzasadniony interes administratora (art. 6 ust. 1 lit. f RODO)</li>
+          </ul>
+
+          <p>
+            <h4>5.5. Zgoda na przetwarzanie danych</h4><br />
+            Przed rozpoczęciem zbierania danych osobowych przez chatbota, użytkownik zostanie poproszony o wyrażenie dobrowolnej i świadomej zgody na przetwarzanie danych. Zgoda może być w każdej chwili wycofana bez wpływu na zgodność z prawem przetwarzania dokonanego przed jej wycofaniem.
+          </p>
+
+          <p>
+            <h4>5.6. Okres przechowywania danych</h4><br />
+            Dane osobowe będą przechowywane przez okres:
+          </p>
+          <ul>
+            <li>Niezbędny do realizacji celów, dla których zostały zebrane</li>
+            <li>Wymagany przez przepisy prawa</li>
+            <li>Do czasu wycofania zgody na przetwarzanie danych</li>
+            <li>Do czasu wniesienia skutecznego sprzeciwu wobec przetwarzania</li>
+          </ul>
+          <p>
+            Maksymalny okres przechowywania danych zebranych przez chatbota wynosi 3 lata od ostatniego kontaktu, chyba że dłuższy okres wynika z uzasadnionego interesu Administratora lub przepisów prawa.
+          </p>
+
+          <p>
+            <h4>5.7. Prawa użytkowników</h4><br />
+            Zgodnie z przepisami RODO, użytkownikowi przysługują następujące prawa:
+          </p>
+          <ul>
+            <li>Prawo dostępu do swoich danych osobowych</li>
+            <li>Prawo do sprostowania (poprawiania) danych</li>
+            <li>Prawo do usunięcia danych (prawo do bycia zapomnianym)</li>
+            <li>Prawo do ograniczenia przetwarzania danych</li>
+            <li>Prawo do przenoszenia danych</li>
+            <li>Prawo do sprzeciwu wobec przetwarzania danych</li>
+            <li>Prawo do niepodlegania decyzjom opartym wyłącznie na zautomatyzowanym przetwarzaniu, w tym profilowaniu</li>
+          </ul>
+          <p>
+            W celu realizacji powyższych praw, użytkownik może skontaktować się z Administratorem poprzez e-mail: kswwop@gmail.com lub telefonicznie: 609-116-300.
+          </p>
+
+          <p>
+            <h4>5.8. Bezpieczeństwo danych</h4><br />
+            Administrator stosuje odpowiednie środki techniczne i organizacyjne w celu zapewnienia bezpieczeństwa przetwarzanych danych osobowych, w szczególności zabezpiecza dane przed ich udostępnieniem osobom nieupoważnionym, zabraniem przez osobę nieuprawnioną, przetwarzaniem z naruszeniem przepisów oraz zmianą, utratą, uszkodzeniem lub zniszczeniem.
+          </p>
+
+          <p>
+            <h4>5.9. Odbiorcy danych</h4><br />
+            Dane osobowe użytkowników mogą być przekazywane następującym kategoriom odbiorców:
+          </p>
+          <ul>
+            <li>Podmioty świadczące usługi IT i hostingowe</li>
+            <li>Podmioty świadczące usługi marketingowe</li>
+            <li>Podmioty świadczące usługi księgowe i prawne</li>
+            <li>Organy publiczne, gdy wynika to z przepisów prawa</li>
+          </ul>
+
+          <p>
+            <h4>5.10. Przekazywanie danych poza EOG</h4><br />
+            Dane osobowe mogą być przekazywane do państw trzecich (poza Europejski Obszar Gospodarczy) w związku z korzystaniem z usług dostawców narzędzi informatycznych. W takich przypadkach stosowane są odpowiednie zabezpieczenia wymagane przez RODO, takie jak standardowe klauzule umowne zatwierdzone przez Komisję Europejską lub wiążące reguły korporacyjne.
+          </p>
+
+          <p>
+            <h4>5.11. Zautomatyzowane podejmowanie decyzji i profilowanie</h4><br />
+            Chatbot może dokonywać zautomatyzowanego podejmowania decyzji, w tym profilowania, w celu dostosowania odpowiedzi do potrzeb użytkownika. Decyzje te nie wywołują jednak skutków prawnych wobec użytkownika ani nie wpływają na niego w podobnie istotny sposób.
+          </p>
+
+          <p>
+            <h4>5.12. Prawo wniesienia skargi</h4><br />
+            Użytkownik ma prawo wniesienia skargi do organu nadzorczego zajmującego się ochroną danych osobowych, tj. Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa).
           </p>
 
           <h3>6. Prawa autorskie</h3>

@@ -16,7 +16,7 @@ const ConditionsPage = async () => {
             <i>
               <a href="https://pompaciepla4you.pl/">https://pompaciepla4you.pl/</a>
             </i>
-            . Właścicielem strony oraz administratorem serwisu <strong>Pompa Ciepła 4 You</strong> jest{"  "} <strong>KSW Anfdrzej Wolak</strong> z siedzibą przy ul. Nawoja 20,
+            . Właścicielem strony oraz administratorem serwisu <strong>Pompa Ciepła 4 You</strong> jest{"  "} <strong>KSW Andrzej Wolak</strong> z siedzibą przy ul. Nawoja 20,
             Nawojowa Góra, 32-065, Polska. Korzystanie ze strony oznacza
             akceptację postanowień niniejszego Regulaminu.
           </p>
@@ -63,7 +63,6 @@ const ConditionsPage = async () => {
             W trakcie korzystania z chatbota oraz strony internetowej mogą być zbierane następujące dane osobowe:
           </p>
           <ul>
-            <li>Imię</li>
             <li>Adres e-mail</li>
             <li>Numer telefonu</li>
           </ul>

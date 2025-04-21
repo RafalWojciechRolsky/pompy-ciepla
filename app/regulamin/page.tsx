@@ -6,24 +6,24 @@ const ConditionsPage = async () => {
       <section className="condtions">
         <div className="condtions__container">
           <h1>
-            Regulamin korzystania ze strony internetowej Pompy Ciepła 4 You
+            Regulamin korzystania ze strony internetowej Pompa Ciepła 4 You
           </h1>
 
           <h3>1. Postanowienia ogólne</h3>
           <p>
             Regulamin określa zasady korzystania ze strony internetowej{" "}
-            <strong>Pompy Ciepła 4 You</strong>, dostępnej pod adresem{" "}
+            <strong>Pompa Ciepła 4 You</strong>, dostępnej pod adresem{" "}
             <i>
               <a href="https://pompaciepla4you.pl/">https://pompaciepla4you.pl/</a>
             </i>
-            . Właścicielem strony oraz administratorem serwisu <strong>Pompy Ciepła 4 You</strong> jest{"  "} <strong>KSW Anfdrzej Wolak</strong> z siedzibą przy ul. Nawoja 20,
+            . Właścicielem strony oraz administratorem serwisu <strong>Pompa Ciepła 4 You</strong> jest{"  "} <strong>KSW Anfdrzej Wolak</strong> z siedzibą przy ul. Nawoja 20,
             Nawojowa Góra, 32-065, Polska. Korzystanie ze strony oznacza
             akceptację postanowień niniejszego Regulaminu.
           </p>
 
           <h3>2. Warunki świadczenia usług drogą elektroniczną</h3>
           <p>
-            <strong>Pompy Ciepła 4 You</strong> świadczy usługi drogą
+            <strong>Pompa Ciepła 4 You</strong> świadczy usługi drogą
             elektroniczną, w tym umożliwia dostęp do informacji o oferowanych
             produktach i usługach. Usługi są świadczone 24 godziny na dobę, 7
             dni w tygodniu.
@@ -50,7 +50,7 @@ const ConditionsPage = async () => {
           <h3>5. Ochrona danych osobowych</h3>
           <p>
             Administratorem danych osobowych przetwarzanych w związku z
-            korzystaniem ze strony jest <strong>Pompy Ciepła 4 You</strong>.
+            korzystaniem ze strony jest <strong>Pompa Ciepła 4 You</strong>.
             Szczegółowe informacje dotyczące przetwarzania danych osobowych
             zawarte są w Polityce Prywatności.
           </p>
@@ -58,7 +58,7 @@ const ConditionsPage = async () => {
           <h3>6. Prawa autorskie</h3>
           <p>
             Wszystkie treści zamieszczone na stronie są chronione prawem
-            autorskim i należą do Pompy Ciepła 4 You lub są wykorzystywane na
+            autorskim i należą do Pompa Ciepła 4 You lub są wykorzystywane na
             podstawie odpowiednich licencji i umów.
           </p>
 
@@ -78,16 +78,16 @@ export default ConditionsPage;
 
 ////////////////////////// Metadata
 
-const title = "Regulamin strony | Pompy Ciepła 4 You | Ciepło z natury";
+const title = "Regulamin strony | Pompa Ciepła 4 You | Ciepło z natury";
 const description =
-  "Przeczytaj regulamin strony Pompy Ciepła 4 You, aby dowiedzieć się więcej o zasadach dostępu do naszych usług i informacji o ekologicznym ogrzewaniu";
-const siteUrl = "https://pompyciepla4you.pl";
+  "Przeczytaj regulamin strony Pompa Ciepła 4 You, aby dowiedzieć się więcej o zasadach dostępu do naszych usług i informacji o ekologicznym ogrzewaniu";
+const siteUrl = "https://pompaciepla4you.pl";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title,
     description,
-    applicationName: "Pompy Ciepła 4 You",
+    applicationName: "Pompa Ciepła 4 You",
     referrer: "origin-when-cross-origin",
     keywords: [
       "regulamin pomp ciepla 4 You",
@@ -96,9 +96,9 @@ export async function generateMetadata(): Promise<Metadata> {
       "oszczędność energii",
       "redukcja CO2",
     ],
-    authors: [{ name: "Pompy Ciepła 4 You", url: siteUrl }],
-    creator: "Pompy Ciepła 4 You",
-    publisher: "Pompy Ciepła 4 You",
+    authors: [{ name: "Pompa Ciepła 4 You", url: siteUrl }],
+    creator: "Pompa Ciepła 4 You",
+    publisher: "Pompa Ciepła 4 You",
     formatDetection: {
       email: false,
       address: false,
@@ -109,13 +109,13 @@ export async function generateMetadata(): Promise<Metadata> {
       description,
       type: "website",
       url: siteUrl,
-      siteName: "Pompy Ciepła 4 You",
+      siteName: "Pompa Ciepła 4 You",
       images: [
         {
           url: `/images/openGraph.jpg`,
           width: 1200,
           height: 630,
-          alt: "Pompy Ciepła 4 You - Ciepło z natury",
+          alt: "Pompa Ciepła 4 You - Ciepło z natury",
         },
       ],
       locale: "pl_PL",
@@ -124,13 +124,13 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title,
       description,
-      creator: "@PompyCiepla4You",
+      creator: "@PompaCiepla4You",
       images: [
         {
           url: `/images/twitter.jpg`,
           width: 1200,
           height: 675,
-          alt: "Pompy Ciepła 4 You - Ciepło z natury",
+          alt: "Pompa Ciepła 4 You - Ciepło z natury",
         },
       ],
     },

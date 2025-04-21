@@ -34,7 +34,7 @@ const PrivacyPolicyPage = async () => {
 
           <h3>1. Wprowadzenie</h3>
           <p>
-            Firma <strong>Pompa Ciepła 4 You</strong> (zwana dalej
+            Firma <strong>KSW Andrzej Wolak</strong> (zwana dalej
             &quot;Firmą&quot;) zobowiązuje się do ochrony prywatności swoich
             klientów i użytkowników serwisu. Niniejsza Polityka Prywatności
             określa zasady przetwarzania i ochrony danych osobowych
@@ -44,8 +44,8 @@ const PrivacyPolicyPage = async () => {
 
           <h3>2. Administrator danych</h3>
           <p>
-            Administratorem danych osobowych jest{" "}
-            <strong>Pompa Ciepła 4 You</strong> z siedzibą przy ul. Nawoja 20,
+            Administratorem danych osobowych na stronie <strong>Pompa Ciepła 4 You</strong> jest{" "}
+            <strong>KSW Andrzej Wolak</strong> z siedzibą przy ul. Nawoja 20,
             Nawojowa Góra, 32-065; Polska.
           </p>
 

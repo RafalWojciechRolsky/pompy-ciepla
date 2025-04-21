@@ -14,20 +14,20 @@ const PrivacyPolicyPage = async () => {
                 <br />
                 Nawojowa Góra
                 <br />
-                33-333, Polska
+                32-065, Polska
               </dd>
 
               <span>
-                <dd>111-222-33-44</dd>
+                <dd>676-169-90-92</dd>
               </span>
             </div>
             <div>
               <dd>
-                <a href="tel:+48999888777">+48 999-888-777</a>
+                <a href="tel:+48609116300">+48 609-116-300</a>
               </dd>
 
               <dd>
-                <a href="mailto:mojmail@gmail.com">mojmail@gmail.com</a>
+                <a href="mailto:kswwop@gmail.com">kswwop@gmail.com</a>
               </dd>
             </div>
           </dl>
@@ -46,7 +46,7 @@ const PrivacyPolicyPage = async () => {
           <p>
             Administratorem danych osobowych jest{" "}
             <strong>Pompy Ciepła 4 You</strong> z siedzibą przy ul. Nawoja 20,
-            Nawojowa Góra, 33-333 Polska.
+            Nawojowa Góra, 32-065; Polska.
           </p>
 
           <h3>3. Zakres i cel przetwarzania danych</h3>
@@ -97,8 +97,8 @@ const PrivacyPolicyPage = async () => {
           <p>
             W sprawach dotyczących przetwarzania danych osobowych prosimy o
             kontakt pod adresem e-mail:{" "}
-            <a href="mailto:mojmail@gmail.com">mojmail@gmail.com</a> lub
-            telefonicznie pod numerami +48 111-222-33-44, +48 999-888-777.
+            <a href="mailto:kswwop@gmail.com">kswwop@gmail.com</a> lub
+            telefonicznie pod numerem +48 609-116-300.
           </p>
         </div>
       </section>

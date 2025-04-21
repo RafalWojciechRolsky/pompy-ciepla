@@ -34,7 +34,7 @@ const Question: FC<IPropsTypes> = async (props) => {
               {/* <a href={'/#form-contact'} rel="noopener" className="btn">
                 Napisz do nas
               </a> */}
-              <a href={'/'} target="_blank" rel="noopener noreferrer" className="btn btn--offer">
+              <a href={'/oferta'} target="_blank" rel="noopener noreferrer" className="btn btn--offer">
                 Oferta <FaLongArrowAltRight size={15} />
               </a>
             </div>

@@ -31,9 +31,9 @@ const Question: FC<IPropsTypes> = async (props) => {
           )}
           {props.links === true && (
             <div className="links">
-              <a href={'/#form-contact'} rel="noopener" className="btn">
+              {/* <a href={'/#form-contact'} rel="noopener" className="btn">
                 Napisz do nas
-              </a>
+              </a> */}
               <a href={'/'} target="_blank" rel="noopener noreferrer" className="btn btn--offer">
                 Oferta <FaLongArrowAltRight size={15} />
               </a>

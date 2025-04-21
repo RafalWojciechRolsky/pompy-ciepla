@@ -50,7 +50,7 @@ const ConditionsPage = async () => {
           <h3>5. Ochrona danych osobowych i RODO</h3>
           <p>
             <h4>5.1. Administrator danych osobowych</h4><br />
-            Administratorem danych osobowych przetwarzanych w związku z korzystaniem ze strony internetowej pompaciepla4you.pl jest <strong>KSW Andrzej Wolak</strong> z siedzibą przy ul. Nawoja 20, Nawojowa Góra, 32-065, Polska, zwany dalej "Administratorem".
+            Administratorem danych osobowych przetwarzanych w związku z korzystaniem ze strony internetowej pompaciepla4you.pl jest <strong>KSW Andrzej Wolak</strong> z siedzibą przy ul. Nawoja 20, Nawojowa Góra, 32-065, Polska, zwany dalej &quot;Administratorem&quot;.
           </p>
 
           <p>

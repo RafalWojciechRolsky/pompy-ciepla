@@ -14,11 +14,10 @@ const ConditionsPage = async () => {
             Regulamin określa zasady korzystania ze strony internetowej{" "}
             <strong>Pompy Ciepła 4 You</strong>, dostępnej pod adresem{" "}
             <i>
-              <a href="https://pompy4you.pl">https://pompy4you.pl</a>
+              <a href="https://pompaciepla4you.pl/">https://pompaciepla4you.pl/</a>
             </i>
-            . Właścicielem strony oraz administratorem serwisu jest{" "}
-            <strong>Pompy Ciepła 4 You</strong> z siedzibą przy ul. Nawoja 20,
-            Nawojowa Góra, 33-333, Polska. Korzystanie ze strony oznacza
+            . Właścicielem strony oraz administratorem serwisu <strong>Pompy Ciepła 4 You</strong> jest{"  "} <strong>KSW Anfdrzej Wolak</strong> z siedzibą przy ul. Nawoja 20,
+            Nawojowa Góra, 32-065, Polska. Korzystanie ze strony oznacza
             akceptację postanowień niniejszego Regulaminu.
           </p>
 
@@ -43,9 +42,8 @@ const ConditionsPage = async () => {
             Użytkownicy, którzy napotkają problemy techniczne, błędy w
             treściach, mają zastrzeżenia do jakości dostarczanych informacji lub
             uznają, że serwis narusza ich prawa, mogą zgłosić reklamację za
-            pomocą następujących kanałów: E-mail: [adres e-mail] Formularz
-            kontaktowy: [link do formularza kontaktowego na stronie] Telefon:
-            [numer telefonu]. Reklamacje będą rozpatrywane w terminie do 14 dni
+            pomocą następujących kanałów: E-mail: kswwop@gmail.com Telefon:
+            609-116-300. Reklamacje będą rozpatrywane w terminie do 14 dni
             roboczych od daty otrzymania.
           </p>
 

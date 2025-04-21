@@ -15,9 +15,9 @@ const Contact: FC<IPropsTypes> = () => {
         <div className="contact__leftContainer">
           <Address />
         </div>
-        <div className="contact__rightContainer">
+        {/* <div className="contact__rightContainer">
           <Form />
-        </div>
+        </div> */}
       </div>
     </section>
   );

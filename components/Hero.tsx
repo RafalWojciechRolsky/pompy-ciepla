@@ -27,9 +27,9 @@ const Hero: FC<IPropsTypes> = async ({ title, points, imageUrl }) => {
               })}
             </ul>
           </div>
-          <a href="/#form-contact" className="btn btn--hero">
+          {/* <a href="/#form-contact" className="btn btn--hero">
             Napisz do nas
-          </a>
+          </a> */}
         </div>
         <div className="hero__imageContainer">
           <figure>

@@ -2,8 +2,16 @@
 
 .footer {
   display: flex;
-  justify-content: center;
-  height: 7rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+
+  &__copyright {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: $third-400;
+  }
 
   @media screen and (max-width: $breakpoint-960) {
     height: unset;
@@ -14,15 +22,16 @@
       display: none;
     }
   }
-
+  
   &__container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: $globalWidth-1920;
-    height: 100%;
+    padding: 2rem 0;
     border-top: 1px solid $third-400;
+
 
     @media screen and (max-width: $breakpoint-1200) {
       width: 95%;

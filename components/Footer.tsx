@@ -41,6 +41,9 @@ const Footer: FC<IPropsTypes> = (props) => {
           </Link>
         </div>
       </div>
+      <p className="footer__copyright">
+        Wszystkie prawa zastrzeżone © 2023 Rafał Majewski
+      </p>
     </footer>
   );
 };

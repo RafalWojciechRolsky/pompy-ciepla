@@ -1,100 +1,59 @@
-# Pompa Ciepła 4 You
+# Pompa Ciepła 4 You — Case Study: Od Projektu do Wdrożenia
 
-[![Next.js](https://img.shields.io/badge/Next.js-14.0.0-000000?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![SCSS](https://img.shields.io/badge/SCSS-1.67.0-CC6699?style=flat-square&logo=sass)](https://sass-lang.com/)
+[![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![SCSS](https://img.shields.io/badge/SCSS-1.67-CC6699?style=flat-square&logo=sass)](https://sass-lang.com/)
 
-Oficjalna strona internetowa [Pompy Ciepła 4 You](https://www.pompaciepla4you.pl/) - profesjonalny serwis i montaż pomp ciepła.
+Kompleksowy projekt strony firmowej dla marki [Pompy Ciepła 4 You](https://www.pompaciepla4you.pl/), zrealizowany w pełnym cyklu produkcyjnym: **od koncepcji i makiety w Figmie, przez autorski design, aż po zaawansowaną implementację w kodzie.**
 
-## 🚀 Funkcjonalności
+## 🎯 Cele Projektu i Osiągnięcia
 
-- Nowoczesny, responsywny interfejs użytkownika
-- Szybkie ładowanie stron dzięki statycznemu generowaniu (SSG)
-- Optymalizacja obrazów z wykorzystaniem Next.js Image
-- Formularze kontaktowe z walidacją (wyłączony - chat)
-- Wsparcie dla bloga i artykułów (TODO)
-- Sekcja z realizacjami (TODO)
-- Informacje o ofercie i producentach
+Głównym celem było stworzenie profesjonalnej wizytówki cyfrowej, która buduje zaufanie u potencjalnych klientów szukających odnawialnych źródeł energii.
 
-## 🛠 Technologie
+- **Pełny Cykl Deweloperski:** Projekt wykonany "od zera" — od pierwszej kreski w Figmie po deploy na serwer.
+- **Wysoki Performance:** Optymalizacja pod kątem Core Web Vitals (SSG, Next.js Image Optimization).
+- **User Experience (UX):** Intuicyjna nawigacja prowadząca użytkownika przez ofertę pomp ciepła i klimatyzacji aż do kontaktu.
+- **SEO Ready:** Struktura semantyczna i metadane zoptymalizowane pod kątem wyszukiwarek.
+- **Design-to-Code:** Wierne odwzorowanie skomplikowanych układów graficznych z zachowaniem pełnej responsywności (RWD).
 
-- **Framework**: Next.js 14
-- **Język**: TypeScript 5.2
-- **Stylowanie**: SCSS (Sass)
-- **Formularze**: React Hook Form z walidacją Zod
-- **UI**: Własne komponenty + React Icons
-- **Wideo**: React Player (YouTube)
-- **Obrazy**: Sharp do optymalizacji
+## 🚀 Kluczowe Funkcjonalności
 
-## 🚀 Uruchomienie projektu
+- **Custom UI:** Własny system komponentów zbudowany w oparciu o SCSS, zapewniający unikalny wygląd niezależny od gotowych bibliotek UI.
+- **Dynamiczna Oferta:** Przejrzysta prezentacja produktów (pompy ciepła, klimatyzatory) oraz wspieranych producentów.
+- **Sekcja Realizacji:** Portfolio wykonanych montaży, prezentujące profesjonalizm firmy.
+- **Integracja Wideo:** Wykorzystanie `react-player` do prezentacji materiałów instruktażowych i promocyjnych.
+- **Bezpieczeństwo i Walidacja:** Formularze zabezpieczone za pomocą `Zod` i `React Hook Form`.
+- **Optymalizacja Mediów:** Wykorzystanie `sharp` oraz `plaiceholder` do generowania rozmytych placeholderów zdjęć (BlurHash).
 
-1. Sklonuj repozytorium:
+## � Stos Technologiczny
 
-   ```bash
-   git clone https://github.com/TwojLogin/pompy-ciepla.git
-   cd pompy-ciepla
-   ```
+- **Frontend**: Next.js 14 (App Router)
+- **Język**: TypeScript (Strict Mode)
+- **Stylowanie**: SCSS (Moduły styli, BEM, Variables)
+- **Zarządzanie Stanem/Formularze**: React Hook Form + Zod
+- **Media**: Sharp, React Player, React Icons
+- **Jakość Kodu**: Biome (Linter & Formatter), ESLint
 
-2. Zainstaluj zależności:
-
-   ```bash
-   npm install
-   # lub
-   yarn
-   ```
-
-3. Uruchom serwer deweloperski:
-
-   ```bash
-   npm run dev
-   # lub
-   yarn dev
-   ```
-
-4. Otwórz [http://localhost:3000](http://localhost:3000) w przeglądarce.
-
-## 🏗 Budowanie
-
-Aby zbudować aplikację produkcyjną:
-
-```bash
-npm run build
-# lub
-yarn build
-```
-
-## 📝 Struktura projektu
+## 🏗 Struktura Projektu
 
 ```
 .
-├── app/                  # Katalog aplikacji Next.js 13+
-│   ├── (Home)/          # Strona główna
-│   ├── about/           # O nas
-│   ├── klimatyzatory/   # Oferta klimatyzacji
-│   ├── pompy-ciepla/    # Oferta pomp ciepła
-│   ├── producenci/      # Producenci
-│   └── realizacje/      # Realizacje
-├── components/          # Komponenty React
-├── data/                # Dane statyczne
-├── lib/                 # Pomocnicze funkcje
-├── model/               # Modele TypeScript
-├── public/              # Zasoby statyczne
-└── styles/              # Style SCSS
+├── app/                  # Architektura App Router (Strony, API, Middleware)
+├── components/          # Reużywalne komponenty UI (Atomy, Molekuły, Organizmy)
+├── data/                # Statyczne źródła danych (teksty, parametry techniczne)
+├── lib/                 # Utility functions, konfiguracje bibliotek
+├── model/               # Definicje typów i interfejsów TypeScript
+├── public/              # Statyczne zasoby (obrazy, wideo, ikony)
+└── styles/              # Globalne style, mixiny i zmienne SCSS
 ```
 
-## 📝 Wkład do projektu
+## � Uruchomienie
 
-1. Sforkuj projekt
-2. Stwórz nowy branch (`git checkout -b feature/nowa-funkcjonalnosc`)
-3. Zatwierdź zmiany (`git commit -am 'Dodaj nową funkcjonalność'`)
-4. Wypchnij zmiany (`git push origin feature/nowa-funkcjonalnosc`)
-5. Otwórz Pull Request
+1.  `npm install`
+2.  `npm run dev`
+3.  Odwiedź `localhost:3000`
 
-## 📜 Licencja
+---
 
-Ten projekt jest własnością Pompy Ciepła 4 You. Wszelkie prawa zastrzeżone.
-
-## 📞 Kontakt
-
-- Strona: [pompaciepla4you.pl](https://www.pompaciepla4you.pl)
+Projekt jest własnością **Pompy Ciepła 4 You**. Implementacja: Rafał Wojciech Rolsky.

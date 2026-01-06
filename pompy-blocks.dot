@@ -1,0 +1,274 @@
+strict digraph "dependency-cruiser output"{
+    rankdir="LR" splines="true" overlap="false" nodesep="0.16" ranksep="0.18" fontname="Helvetica-bold" fontsize="9" style="rounded,bold,filled" fillcolor="#ffffff" compound="true"
+    node [shape="box" style="rounded, filled" height="0.2" color="black" fillcolor="#ffffcc" fontcolor="black" fontname="Helvetica" fontsize="9"]
+    edge [arrowhead="normal" arrowsize="0.6" penwidth="2.0" color="#00000033" fontname="Helvetica" fontsize="9"]
+
+    ".dependency-cruiser.js" [label=<.dependency-cruiser.js> tooltip=".dependency-cruiser.js" URL=".dependency-cruiser.js" fillcolor="#ccffcc"]
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/app" {label="app" subgraph "cluster_.next/server/app/(Home)" {label="(Home)" ".next/server/app/(Home)/page.js" [label=<page.js> tooltip="page.js" URL=".next/server/app/(Home)/page.js" ] } } } }
+    ".next/server/app/(Home)/page.js" -> ".next/server/webpack-runtime.js"
+    ".next/server/app/(Home)/page.js" -> "fs" [style="dashed" penwidth="1.0"]
+    ".next/server/app/(Home)/page.js" -> "fs/promises" [style="dashed" penwidth="1.0"]
+    ".next/server/app/(Home)/page.js" -> "net" [style="dashed" penwidth="1.0"]
+    ".next/server/app/(Home)/page.js" -> "node_modules/next" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="red" color="red"]
+    ".next/server/app/(Home)/page.js" -> "path" [style="dashed" penwidth="1.0"]
+    ".next/server/app/(Home)/page.js" -> "node_modules/sharp" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="red" color="red"]
+    ".next/server/app/(Home)/page.js" -> "tty" [style="dashed" penwidth="1.0"]
+    ".next/server/app/(Home)/page.js" -> "url" [style="dashed" penwidth="1.0"]
+    ".next/server/app/(Home)/page.js" -> "util" [style="dashed" penwidth="1.0"]
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/app" {label="app" subgraph "cluster_.next/server/app/(Home)" {label="(Home)" ".next/server/app/(Home)/page_client-reference-manifest.js" [label=<page_client-reference-manifest.js> tooltip="no-orphans" URL=".next/server/app/(Home)/page_client-reference-manifest.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/app" {label="app" subgraph "cluster_.next/server/app/favicon.ico" {label="favicon.ico" ".next/server/app/favicon.ico/route.js" [label=<route.js> tooltip="route.js" URL=".next/server/app/favicon.ico/route.js" ] } } } }
+    ".next/server/app/favicon.ico/route.js" -> ".next/server/webpack-runtime.js"
+    ".next/server/app/favicon.ico/route.js" -> "node_modules/next" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="red" color="red"]
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/app" {label="app" subgraph "cluster_.next/server/app/klimatyzatory" {label="klimatyzatory" ".next/server/app/klimatyzatory/page.js" [label=<page.js> tooltip="page.js" URL=".next/server/app/klimatyzatory/page.js" ] } } } }
+    ".next/server/app/klimatyzatory/page.js" -> ".next/server/webpack-runtime.js"
+    ".next/server/app/klimatyzatory/page.js" -> "fs" [style="dashed" penwidth="1.0"]
+    ".next/server/app/klimatyzatory/page.js" -> "fs/promises" [style="dashed" penwidth="1.0"]
+    ".next/server/app/klimatyzatory/page.js" -> "node_modules/next" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="red" color="red"]
+    ".next/server/app/klimatyzatory/page.js" -> "path" [style="dashed" penwidth="1.0"]
+    ".next/server/app/klimatyzatory/page.js" -> "node_modules/sharp" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="red" color="red"]
+    ".next/server/app/klimatyzatory/page.js" -> "url" [style="dashed" penwidth="1.0"]
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/app" {label="app" subgraph "cluster_.next/server/app/klimatyzatory" {label="klimatyzatory" ".next/server/app/klimatyzatory/page_client-reference-manifest.js" [label=<page_client-reference-manifest.js> tooltip="no-orphans" URL=".next/server/app/klimatyzatory/page_client-reference-manifest.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/app" {label="app" subgraph "cluster_.next/server/app/oferta" {label="oferta" ".next/server/app/oferta/page.js" [label=<page.js> tooltip="page.js" URL=".next/server/app/oferta/page.js" ] } } } }
+    ".next/server/app/oferta/page.js" -> ".next/server/webpack-runtime.js"
+    ".next/server/app/oferta/page.js" -> "fs" [style="dashed" penwidth="1.0"]
+    ".next/server/app/oferta/page.js" -> "fs/promises" [style="dashed" penwidth="1.0"]
+    ".next/server/app/oferta/page.js" -> "node_modules/next" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="red" color="red"]
+    ".next/server/app/oferta/page.js" -> "path" [style="dashed" penwidth="1.0"]
+    ".next/server/app/oferta/page.js" -> "node_modules/sharp" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="red" color="red"]
+    ".next/server/app/oferta/page.js" -> "url" [style="dashed" penwidth="1.0"]
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/app" {label="app" subgraph "cluster_.next/server/app/oferta" {label="oferta" ".next/server/app/oferta/page_client-reference-manifest.js" [label=<page_client-reference-manifest.js> tooltip="no-orphans" URL=".next/server/app/oferta/page_client-reference-manifest.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/app" {label="app" subgraph "cluster_.next/server/app/pompy-ciepla" {label="pompy-ciepla" ".next/server/app/pompy-ciepla/page.js" [label=<page.js> tooltip="page.js" URL=".next/server/app/pompy-ciepla/page.js" ] } } } }
+    ".next/server/app/pompy-ciepla/page.js" -> ".next/server/webpack-runtime.js"
+    ".next/server/app/pompy-ciepla/page.js" -> "fs" [style="dashed" penwidth="1.0"]
+    ".next/server/app/pompy-ciepla/page.js" -> "fs/promises" [style="dashed" penwidth="1.0"]
+    ".next/server/app/pompy-ciepla/page.js" -> "node_modules/next" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="red" color="red"]
+    ".next/server/app/pompy-ciepla/page.js" -> "path" [style="dashed" penwidth="1.0"]
+    ".next/server/app/pompy-ciepla/page.js" -> "node_modules/sharp" [xlabel="no-non-package-json" tooltip="no-non-package-json" penwidth="1.0" fontcolor="red" color="red"]
+    ".next/server/app/pompy-ciepla/page.js" -> "url" [style="dashed" penwidth="1.0"]
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/app" {label="app" subgraph "cluster_.next/server/app/pompy-ciepla" {label="pompy-ciepla" ".next/server/app/pompy-ciepla/page_client-reference-manifest.js" [label=<page_client-reference-manifest.js> tooltip="no-orphans" URL=".next/server/app/pompy-ciepla/page_client-reference-manifest.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" ".next/server/interception-route-rewrite-manifest.js" [label=<interception-route-rewrite-manifest.js> tooltip="no-orphans" URL=".next/server/interception-route-rewrite-manifest.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" ".next/server/middleware-build-manifest.js" [label=<middleware-build-manifest.js> tooltip="no-orphans" URL=".next/server/middleware-build-manifest.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" ".next/server/middleware-react-loadable-manifest.js" [label=<middleware-react-loadable-manifest.js> tooltip="no-orphans" URL=".next/server/middleware-react-loadable-manifest.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" ".next/server/next-font-manifest.js" [label=<next-font-manifest.js> tooltip="no-orphans" URL=".next/server/next-font-manifest.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" ".next/server/server-reference-manifest.js" [label=<server-reference-manifest.js> tooltip="no-orphans" URL=".next/server/server-reference-manifest.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/vendor-chunks" {label="vendor-chunks" ".next/server/vendor-chunks/@swc.js" [label=<@swc.js> tooltip="no-orphans" URL=".next/server/vendor-chunks/@swc.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/vendor-chunks" {label="vendor-chunks" ".next/server/vendor-chunks/eve.js" [label=<eve.js> tooltip="no-orphans" URL=".next/server/vendor-chunks/eve.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/vendor-chunks" {label="vendor-chunks" ".next/server/vendor-chunks/fast-deep-equal.js" [label=<fast-deep-equal.js> tooltip="no-orphans" URL=".next/server/vendor-chunks/fast-deep-equal.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/vendor-chunks" {label="vendor-chunks" ".next/server/vendor-chunks/load-script.js" [label=<load-script.js> tooltip="no-orphans" URL=".next/server/vendor-chunks/load-script.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/vendor-chunks" {label="vendor-chunks" ".next/server/vendor-chunks/next.js" [label=<next.js> tooltip="no-orphans" URL=".next/server/vendor-chunks/next.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/vendor-chunks" {label="vendor-chunks" ".next/server/vendor-chunks/object-assign.js" [label=<object-assign.js> tooltip="no-orphans" URL=".next/server/vendor-chunks/object-assign.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/vendor-chunks" {label="vendor-chunks" ".next/server/vendor-chunks/plaiceholder.js" [label=<plaiceholder.js> tooltip="no-orphans" URL=".next/server/vendor-chunks/plaiceholder.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/vendor-chunks" {label="vendor-chunks" ".next/server/vendor-chunks/prop-types.js" [label=<prop-types.js> tooltip="no-orphans" URL=".next/server/vendor-chunks/prop-types.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/vendor-chunks" {label="vendor-chunks" ".next/server/vendor-chunks/react-burger-menu.js" [label=<react-burger-menu.js> tooltip="no-orphans" URL=".next/server/vendor-chunks/react-burger-menu.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/vendor-chunks" {label="vendor-chunks" ".next/server/vendor-chunks/react-icons.js" [label=<react-icons.js> tooltip="no-orphans" URL=".next/server/vendor-chunks/react-icons.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/vendor-chunks" {label="vendor-chunks" ".next/server/vendor-chunks/react-is.js" [label=<react-is.js> tooltip="no-orphans" URL=".next/server/vendor-chunks/react-is.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/vendor-chunks" {label="vendor-chunks" ".next/server/vendor-chunks/react-youtube.js" [label=<react-youtube.js> tooltip="no-orphans" URL=".next/server/vendor-chunks/react-youtube.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/vendor-chunks" {label="vendor-chunks" ".next/server/vendor-chunks/sister.js" [label=<sister.js> tooltip="no-orphans" URL=".next/server/vendor-chunks/sister.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/vendor-chunks" {label="vendor-chunks" ".next/server/vendor-chunks/snapsvg-cjs.js" [label=<snapsvg-cjs.js> tooltip="no-orphans" URL=".next/server/vendor-chunks/snapsvg-cjs.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" subgraph "cluster_.next/server/vendor-chunks" {label="vendor-chunks" ".next/server/vendor-chunks/youtube-player.js" [label=<youtube-player.js> tooltip="no-orphans" URL=".next/server/vendor-chunks/youtube-player.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/server" {label="server" ".next/server/webpack-runtime.js" [label=<webpack-runtime.js> tooltip="webpack-runtime.js" URL=".next/server/webpack-runtime.js" ] } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/static" {label="static" subgraph "cluster_.next/static/chunks" {label="chunks" ".next/static/chunks/app-pages-internals.js" [label=<app-pages-internals.js> tooltip="no-orphans" URL=".next/static/chunks/app-pages-internals.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/static" {label="static" subgraph "cluster_.next/static/chunks" {label="chunks" subgraph "cluster_.next/static/chunks/app" {label="app" subgraph "cluster_.next/static/chunks/app/(Home)" {label="(Home)" ".next/static/chunks/app/(Home)/page.js" [label=<page.js> tooltip="no-orphans" URL=".next/static/chunks/app/(Home)/page.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/static" {label="static" subgraph "cluster_.next/static/chunks" {label="chunks" subgraph "cluster_.next/static/chunks/app" {label="app" subgraph "cluster_.next/static/chunks/app/klimatyzatory" {label="klimatyzatory" ".next/static/chunks/app/klimatyzatory/page.js" [label=<page.js> tooltip="no-orphans" URL=".next/static/chunks/app/klimatyzatory/page.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/static" {label="static" subgraph "cluster_.next/static/chunks" {label="chunks" subgraph "cluster_.next/static/chunks/app" {label="app" ".next/static/chunks/app/layout.js" [label=<layout.js> tooltip="no-orphans" URL=".next/static/chunks/app/layout.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/static" {label="static" subgraph "cluster_.next/static/chunks" {label="chunks" subgraph "cluster_.next/static/chunks/app" {label="app" subgraph "cluster_.next/static/chunks/app/oferta" {label="oferta" ".next/static/chunks/app/oferta/page.js" [label=<page.js> tooltip="no-orphans" URL=".next/static/chunks/app/oferta/page.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/static" {label="static" subgraph "cluster_.next/static/chunks" {label="chunks" subgraph "cluster_.next/static/chunks/app" {label="app" subgraph "cluster_.next/static/chunks/app/pompy-ciepla" {label="pompy-ciepla" ".next/static/chunks/app/pompy-ciepla/page.js" [label=<page.js> tooltip="no-orphans" URL=".next/static/chunks/app/pompy-ciepla/page.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/static" {label="static" subgraph "cluster_.next/static/chunks" {label="chunks" ".next/static/chunks/main-app.js" [label=<main-app.js> tooltip="no-orphans" URL=".next/static/chunks/main-app.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/static" {label="static" subgraph "cluster_.next/static/chunks" {label="chunks" ".next/static/chunks/polyfills.js" [label=<polyfills.js> tooltip="no-orphans" URL=".next/static/chunks/polyfills.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/static" {label="static" subgraph "cluster_.next/static/chunks" {label="chunks" ".next/static/chunks/webpack.js" [label=<webpack.js> tooltip="no-orphans" URL=".next/static/chunks/webpack.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/static" {label="static" subgraph "cluster_.next/static/development" {label="development" ".next/static/development/_buildManifest.js" [label=<_buildManifest.js> tooltip="no-orphans" URL=".next/static/development/_buildManifest.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/static" {label="static" subgraph "cluster_.next/static/development" {label="development" ".next/static/development/_ssgManifest.js" [label=<_ssgManifest.js> tooltip="no-orphans" URL=".next/static/development/_ssgManifest.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/static" {label="static" subgraph "cluster_.next/static/webpack" {label="webpack" subgraph "cluster_.next/static/webpack/app" {label="app" ".next/static/webpack/app/layout.c9f3cd28e8894096.hot-update.js" [label=<layout.c9f3cd28e8894096.hot-update.js> tooltip="no-orphans" URL=".next/static/webpack/app/layout.c9f3cd28e8894096.hot-update.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/static" {label="static" subgraph "cluster_.next/static/webpack" {label="webpack" ".next/static/webpack/webpack.23b7357592a849bb.hot-update.js" [label=<webpack.23b7357592a849bb.hot-update.js> tooltip="no-orphans" URL=".next/static/webpack/webpack.23b7357592a849bb.hot-update.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/static" {label="static" subgraph "cluster_.next/static/webpack" {label="webpack" ".next/static/webpack/webpack.c9f3cd28e8894096.hot-update.js" [label=<webpack.c9f3cd28e8894096.hot-update.js> tooltip="no-orphans" URL=".next/static/webpack/webpack.c9f3cd28e8894096.hot-update.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/static" {label="static" subgraph "cluster_.next/static/webpack" {label="webpack" ".next/static/webpack/webpack.cf8feab51ac06d1c.hot-update.js" [label=<webpack.cf8feab51ac06d1c.hot-update.js> tooltip="no-orphans" URL=".next/static/webpack/webpack.cf8feab51ac06d1c.hot-update.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } }
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/types" {label="types" subgraph "cluster_.next/types/app" {label="app" subgraph "cluster_.next/types/app/(Home)" {label="(Home)" ".next/types/app/(Home)/page.ts" [label=<page.ts> tooltip="page.ts" URL=".next/types/app/(Home)/page.ts" fillcolor="#ddfeff"] } } } }
+    ".next/types/app/(Home)/page.ts" -> "app/(Home)/page.tsx"
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/types" {label="types" subgraph "cluster_.next/types/app" {label="app" subgraph "cluster_.next/types/app/klimatyzatory" {label="klimatyzatory" ".next/types/app/klimatyzatory/page.ts" [label=<page.ts> tooltip="page.ts" URL=".next/types/app/klimatyzatory/page.ts" fillcolor="#ddfeff"] } } } }
+    ".next/types/app/klimatyzatory/page.ts" -> "app/klimatyzatory/page.tsx"
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/types" {label="types" subgraph "cluster_.next/types/app" {label="app" ".next/types/app/layout.ts" [label=<layout.ts> tooltip="layout.ts" URL=".next/types/app/layout.ts" fillcolor="#ddfeff"] } } }
+    ".next/types/app/layout.ts" -> "app/layout.tsx"
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/types" {label="types" subgraph "cluster_.next/types/app" {label="app" subgraph "cluster_.next/types/app/oferta" {label="oferta" ".next/types/app/oferta/page.ts" [label=<page.ts> tooltip="page.ts" URL=".next/types/app/oferta/page.ts" fillcolor="#ddfeff"] } } } }
+    ".next/types/app/oferta/page.ts" -> "app/oferta/page.tsx"
+    subgraph "cluster_.next" {label=".next" subgraph "cluster_.next/types" {label="types" subgraph "cluster_.next/types/app" {label="app" subgraph "cluster_.next/types/app/pompy-ciepla" {label="pompy-ciepla" ".next/types/app/pompy-ciepla/page.ts" [label=<page.ts> tooltip="page.ts" URL=".next/types/app/pompy-ciepla/page.ts" fillcolor="#ddfeff"] } } } }
+    ".next/types/app/pompy-ciepla/page.ts" -> "app/pompy-ciepla/page.tsx"
+    subgraph "cluster_app" {label="app" subgraph "cluster_app/(Home)" {label="(Home)" "app/(Home)/page.tsx" [label=<page.tsx> tooltip="page.tsx" URL="app/(Home)/page.tsx" fillcolor="#bbfeff"] } }
+    "app/(Home)/page.tsx" -> "components/Hero.tsx"
+    "app/(Home)/page.tsx" -> "components/Logos.tsx"
+    "app/(Home)/page.tsx" -> "components/Movies.tsx"
+    "app/(Home)/page.tsx" -> "components/Question.tsx"
+    "app/(Home)/page.tsx" -> "components/Services/Services.tsx"
+    "app/(Home)/page.tsx" -> "fs" [style="dashed" penwidth="1.0"]
+    "app/(Home)/page.tsx" -> "path" [style="dashed" penwidth="1.0"]
+    subgraph "cluster_app" {label="app" subgraph "cluster_app/about" {label="about" "app/about/page.tsx" [label=<page.tsx> tooltip="page.tsx" URL="app/about/page.tsx" fillcolor="#bbfeff"] } }
+    "app/about/page.tsx" -> "components/Hero.tsx"
+    "app/about/page.tsx" -> "components/Logos.tsx"
+    "app/about/page.tsx" -> "fs" [style="dashed" penwidth="1.0"]
+    "app/about/page.tsx" -> "path" [style="dashed" penwidth="1.0"]
+    subgraph "cluster_app" {label="app" subgraph "cluster_app/api" {label="api" subgraph "cluster_app/api/form" {label="form" "app/api/form/route.ts" [label=<route.ts> tooltip="route.ts" URL="app/api/form/route.ts" fillcolor="#ddfeff"] } } }
+    "app/api/form/route.ts" -> "model/formShema.ts"
+    subgraph "cluster_app" {label="app" subgraph "cluster_app/cookies" {label="cookies" "app/cookies/page.tsx" [label=<page.tsx> tooltip="no-orphans" URL="app/cookies/page.tsx" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } }
+    subgraph "cluster_app" {label="app" subgraph "cluster_app/klimatyzatory" {label="klimatyzatory" "app/klimatyzatory/page.tsx" [label=<page.tsx> tooltip="page.tsx" URL="app/klimatyzatory/page.tsx" fillcolor="#bbfeff"] } }
+    "app/klimatyzatory/page.tsx" -> "components/Hero.tsx"
+    "app/klimatyzatory/page.tsx" -> "components/Logos.tsx"
+    "app/klimatyzatory/page.tsx" -> "fs" [style="dashed" penwidth="1.0"]
+    "app/klimatyzatory/page.tsx" -> "node_modules/next" [penwidth="1.0"]
+    "app/klimatyzatory/page.tsx" -> "path" [style="dashed" penwidth="1.0"]
+    subgraph "cluster_app" {label="app" "app/layout.tsx" [label=<layout.tsx> tooltip="layout.tsx" URL="app/layout.tsx" fillcolor="#bbfeff"] }
+    "app/layout.tsx" -> "styles/main.scss"
+    "app/layout.tsx" -> "components/Footer.tsx"
+    "app/layout.tsx" -> "components/FormContact/Contact.tsx"
+    "app/layout.tsx" -> "components/Header/Header.tsx"
+    "app/layout.tsx" -> "components/Header/Sidebar.tsx"
+    "app/layout.tsx" -> "node_modules/next" [penwidth="1.0"]
+    subgraph "cluster_app" {label="app" "app/middleware.ts" [label=<middleware.ts> tooltip="middleware.ts" URL="app/middleware.ts" fillcolor="#ddfeff"] }
+    "app/middleware.ts" -> "node_modules/next" [penwidth="1.0"]
+    subgraph "cluster_app" {label="app" subgraph "cluster_app/oferta" {label="oferta" "app/oferta/page.tsx" [label=<page.tsx> tooltip="page.tsx" URL="app/oferta/page.tsx" fillcolor="#bbfeff"] } }
+    "app/oferta/page.tsx" -> "components/Hero.tsx"
+    "app/oferta/page.tsx" -> "components/Logos.tsx"
+    "app/oferta/page.tsx" -> "fs" [style="dashed" penwidth="1.0"]
+    "app/oferta/page.tsx" -> "path" [style="dashed" penwidth="1.0"]
+    subgraph "cluster_app" {label="app" subgraph "cluster_app/polityka-prywatnosci" {label="polityka-prywatnosci" "app/polityka-prywatnosci/page.tsx" [label=<page.tsx> tooltip="no-orphans" URL="app/polityka-prywatnosci/page.tsx" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } }
+    subgraph "cluster_app" {label="app" subgraph "cluster_app/pompy-ciepla" {label="pompy-ciepla" "app/pompy-ciepla/page.tsx" [label=<page.tsx> tooltip="page.tsx" URL="app/pompy-ciepla/page.tsx" fillcolor="#bbfeff"] } }
+    "app/pompy-ciepla/page.tsx" -> "components/Hero.tsx"
+    "app/pompy-ciepla/page.tsx" -> "components/Logos.tsx"
+    "app/pompy-ciepla/page.tsx" -> "fs" [style="dashed" penwidth="1.0"]
+    "app/pompy-ciepla/page.tsx" -> "node_modules/next" [penwidth="1.0"]
+    "app/pompy-ciepla/page.tsx" -> "path" [style="dashed" penwidth="1.0"]
+    subgraph "cluster_app" {label="app" subgraph "cluster_app/producenci" {label="producenci" "app/producenci/page.tsx" [label=<page.tsx> tooltip="page.tsx" URL="app/producenci/page.tsx" fillcolor="#bbfeff"] } }
+    "app/producenci/page.tsx" -> "components/Hero.tsx"
+    "app/producenci/page.tsx" -> "components/Logos.tsx"
+    "app/producenci/page.tsx" -> "components/Producers/Gree/Gree.tsx"
+    "app/producenci/page.tsx" -> "components/Producers/Haier/Haier.tsx"
+    "app/producenci/page.tsx" -> "components/Producers/Heiko/Heiko.tsx"
+    "app/producenci/page.tsx" -> "components/Producers/Neoheat/Neoheat.tsx"
+    "app/producenci/page.tsx" -> "components/Producers/Panasonic/Panasonic.tsx"
+    "app/producenci/page.tsx" -> "components/Producers/Rosento/Rosento.tsx"
+    "app/producenci/page.tsx" -> "fs" [style="dashed" penwidth="1.0"]
+    "app/producenci/page.tsx" -> "path" [style="dashed" penwidth="1.0"]
+    subgraph "cluster_app" {label="app" subgraph "cluster_app/realizacje" {label="realizacje" "app/realizacje/page.tsx" [label=<page.tsx> tooltip="page.tsx" URL="app/realizacje/page.tsx" fillcolor="#bbfeff"] } }
+    "app/realizacje/page.tsx" -> "components/Hero.tsx"
+    "app/realizacje/page.tsx" -> "components/Logos.tsx"
+    "app/realizacje/page.tsx" -> "fs" [style="dashed" penwidth="1.0"]
+    "app/realizacje/page.tsx" -> "path" [style="dashed" penwidth="1.0"]
+    subgraph "cluster_app" {label="app" subgraph "cluster_app/regulamin" {label="regulamin" "app/regulamin/page.tsx" [label=<page.tsx> tooltip="no-orphans" URL="app/regulamin/page.tsx" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } }
+    subgraph "cluster_components" {label="components" "components/Footer.tsx" [label=<Footer.tsx> tooltip="Footer.tsx" URL="components/Footer.tsx" fillcolor="#bbfeff"] }
+    "components/Footer.tsx" -> "components/Logo.tsx"
+    "components/Footer.tsx" -> "node_modules/next" [penwidth="1.0"]
+    "components/Footer.tsx" -> "node_modules/react-icons" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/FormContact" {label="FormContact" "components/FormContact/Address.tsx" [label=<Address.tsx> tooltip="Address.tsx" URL="components/FormContact/Address.tsx" fillcolor="#bbfeff"] } }
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/FormContact" {label="FormContact" "components/FormContact/Contact.tsx" [label=<Contact.tsx> tooltip="Contact.tsx" URL="components/FormContact/Contact.tsx" fillcolor="#bbfeff"] } }
+    "components/FormContact/Contact.tsx" -> "components/FormContact/Address.tsx"
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/FormContact" {label="FormContact" "components/FormContact/Form.tsx" [label=<Form.tsx> tooltip="Form.tsx" URL="components/FormContact/Form.tsx" fillcolor="#bbfeff"] } }
+    "components/FormContact/Form.tsx" -> "model/formShema.ts"
+    "components/FormContact/Form.tsx" -> "node_modules/@hookform/resolvers" [penwidth="1.0"]
+    "components/FormContact/Form.tsx" -> "node_modules/next" [penwidth="1.0"]
+    "components/FormContact/Form.tsx" -> "node_modules/react-hook-form" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/Header" {label="Header" "components/Header/Header.tsx" [label=<Header.tsx> tooltip="Header.tsx" URL="components/Header/Header.tsx" fillcolor="#bbfeff"] } }
+    "components/Header/Header.tsx" -> "components/Logo.tsx"
+    "components/Header/Header.tsx" -> "node_modules/next" [penwidth="1.0"]
+    "components/Header/Header.tsx" -> "node_modules/react" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/Header" {label="Header" "components/Header/Sidebar.tsx" [label=<Sidebar.tsx> tooltip="Sidebar.tsx" URL="components/Header/Sidebar.tsx" fillcolor="#bbfeff"] } }
+    "components/Header/Sidebar.tsx" -> "node_modules/next" [penwidth="1.0"]
+    "components/Header/Sidebar.tsx" -> "node_modules/react-burger-menu" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" "components/Hero.tsx" [label=<Hero.tsx> tooltip="Hero.tsx" URL="components/Hero.tsx" fillcolor="#bbfeff"] }
+    "components/Hero.tsx" -> "lib/getBase64.ts"
+    "components/Hero.tsx" -> "node_modules/next" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" "components/Logo.tsx" [label=<Logo.tsx> tooltip="Logo.tsx" URL="components/Logo.tsx" fillcolor="#bbfeff"] }
+    subgraph "cluster_components" {label="components" "components/Logos.tsx" [label=<Logos.tsx> tooltip="Logos.tsx" URL="components/Logos.tsx" fillcolor="#bbfeff"] }
+    "components/Logos.tsx" -> "public/images/Gree_logo.svg"
+    "components/Logos.tsx" -> "public/images/Haier_logo.svg"
+    "components/Logos.tsx" -> "public/images/Heiko_logo.svg"
+    "components/Logos.tsx" -> "public/images/Neoheat_logo.svg"
+    "components/Logos.tsx" -> "public/images/Panasonic_logo.svg"
+    "components/Logos.tsx" -> "public/images/Rotenso_logo.svg"
+    "components/Logos.tsx" -> "node_modules/next" [penwidth="1.0"]
+    "components/Logos.tsx" -> "node_modules/react" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" "components/Movies.tsx" [label=<Movies.tsx> tooltip="Movies.tsx" URL="components/Movies.tsx" fillcolor="#bbfeff"] }
+    "components/Movies.tsx" -> "public/images/YouTube_play_button_icon.svg"
+    "components/Movies.tsx" -> "node_modules/next" [penwidth="1.0"]
+    "components/Movies.tsx" -> "node_modules/react" [penwidth="1.0"]
+    "components/Movies.tsx" -> "node_modules/react-youtube" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/Producers" {label="Producers" subgraph "cluster_components/Producers/Gree" {label="Gree" "components/Producers/Gree/Gree.tsx" [label=<Gree.tsx> tooltip="Gree.tsx" URL="components/Producers/Gree/Gree.tsx" fillcolor="#bbfeff"] } } }
+    "components/Producers/Gree/Gree.tsx" -> "components/Producers/Gree/MovieGree.tsx"
+    "components/Producers/Gree/Gree.tsx" -> "node_modules/next" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/Producers" {label="Producers" subgraph "cluster_components/Producers/Gree" {label="Gree" "components/Producers/Gree/MovieGree.tsx" [label=<MovieGree.tsx> tooltip="MovieGree.tsx" URL="components/Producers/Gree/MovieGree.tsx" fillcolor="#bbfeff"] } } }
+    "components/Producers/Gree/MovieGree.tsx" -> "public/images/YouTube_play_button_icon.svg"
+    "components/Producers/Gree/MovieGree.tsx" -> "node_modules/next" [penwidth="1.0"]
+    "components/Producers/Gree/MovieGree.tsx" -> "node_modules/react" [penwidth="1.0"]
+    "components/Producers/Gree/MovieGree.tsx" -> "node_modules/react-youtube" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/Producers" {label="Producers" subgraph "cluster_components/Producers/Haier" {label="Haier" "components/Producers/Haier/Haier.tsx" [label=<Haier.tsx> tooltip="Haier.tsx" URL="components/Producers/Haier/Haier.tsx" fillcolor="#bbfeff"] } } }
+    "components/Producers/Haier/Haier.tsx" -> "components/Producers/Haier/MovieHaier.tsx"
+    "components/Producers/Haier/Haier.tsx" -> "node_modules/next" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/Producers" {label="Producers" subgraph "cluster_components/Producers/Haier" {label="Haier" "components/Producers/Haier/MovieHaier.tsx" [label=<MovieHaier.tsx> tooltip="MovieHaier.tsx" URL="components/Producers/Haier/MovieHaier.tsx" fillcolor="#bbfeff"] } } }
+    "components/Producers/Haier/MovieHaier.tsx" -> "public/images/YouTube_play_button_icon.svg"
+    "components/Producers/Haier/MovieHaier.tsx" -> "node_modules/next" [penwidth="1.0"]
+    "components/Producers/Haier/MovieHaier.tsx" -> "node_modules/react" [penwidth="1.0"]
+    "components/Producers/Haier/MovieHaier.tsx" -> "node_modules/react-youtube" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/Producers" {label="Producers" subgraph "cluster_components/Producers/Heiko" {label="Heiko" "components/Producers/Heiko/Heiko.tsx" [label=<Heiko.tsx> tooltip="Heiko.tsx" URL="components/Producers/Heiko/Heiko.tsx" fillcolor="#bbfeff"] } } }
+    "components/Producers/Heiko/Heiko.tsx" -> "node_modules/next" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/Producers" {label="Producers" subgraph "cluster_components/Producers/Neoheat" {label="Neoheat" "components/Producers/Neoheat/MovieNeoheat.tsx" [label=<MovieNeoheat.tsx> tooltip="MovieNeoheat.tsx" URL="components/Producers/Neoheat/MovieNeoheat.tsx" fillcolor="#bbfeff"] } } }
+    "components/Producers/Neoheat/MovieNeoheat.tsx" -> "public/images/YouTube_play_button_icon.svg"
+    "components/Producers/Neoheat/MovieNeoheat.tsx" -> "node_modules/next" [penwidth="1.0"]
+    "components/Producers/Neoheat/MovieNeoheat.tsx" -> "node_modules/react" [penwidth="1.0"]
+    "components/Producers/Neoheat/MovieNeoheat.tsx" -> "node_modules/react-youtube" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/Producers" {label="Producers" subgraph "cluster_components/Producers/Neoheat" {label="Neoheat" "components/Producers/Neoheat/Neoheat.tsx" [label=<Neoheat.tsx> tooltip="Neoheat.tsx" URL="components/Producers/Neoheat/Neoheat.tsx" fillcolor="#bbfeff"] } } }
+    "components/Producers/Neoheat/Neoheat.tsx" -> "components/Producers/Neoheat/MovieNeoheat.tsx"
+    "components/Producers/Neoheat/Neoheat.tsx" -> "node_modules/next" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/Producers" {label="Producers" subgraph "cluster_components/Producers/Panasonic" {label="Panasonic" "components/Producers/Panasonic/MoviePanasonic.tsx" [label=<MoviePanasonic.tsx> tooltip="MoviePanasonic.tsx" URL="components/Producers/Panasonic/MoviePanasonic.tsx" fillcolor="#bbfeff"] } } }
+    "components/Producers/Panasonic/MoviePanasonic.tsx" -> "public/images/YouTube_play_button_icon.svg"
+    "components/Producers/Panasonic/MoviePanasonic.tsx" -> "node_modules/next" [penwidth="1.0"]
+    "components/Producers/Panasonic/MoviePanasonic.tsx" -> "node_modules/react" [penwidth="1.0"]
+    "components/Producers/Panasonic/MoviePanasonic.tsx" -> "node_modules/react-youtube" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/Producers" {label="Producers" subgraph "cluster_components/Producers/Panasonic" {label="Panasonic" "components/Producers/Panasonic/Panasonic.tsx" [label=<Panasonic.tsx> tooltip="Panasonic.tsx" URL="components/Producers/Panasonic/Panasonic.tsx" fillcolor="#bbfeff"] } } }
+    "components/Producers/Panasonic/Panasonic.tsx" -> "components/Producers/Panasonic/MoviePanasonic.tsx"
+    "components/Producers/Panasonic/Panasonic.tsx" -> "node_modules/next" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/Producers" {label="Producers" subgraph "cluster_components/Producers/Rosento" {label="Rosento" "components/Producers/Rosento/MovieRosento.tsx" [label=<MovieRosento.tsx> tooltip="MovieRosento.tsx" URL="components/Producers/Rosento/MovieRosento.tsx" fillcolor="#bbfeff"] } } }
+    "components/Producers/Rosento/MovieRosento.tsx" -> "public/images/YouTube_play_button_icon.svg"
+    "components/Producers/Rosento/MovieRosento.tsx" -> "node_modules/next" [penwidth="1.0"]
+    "components/Producers/Rosento/MovieRosento.tsx" -> "node_modules/react" [penwidth="1.0"]
+    "components/Producers/Rosento/MovieRosento.tsx" -> "node_modules/react-youtube" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/Producers" {label="Producers" subgraph "cluster_components/Producers/Rosento" {label="Rosento" "components/Producers/Rosento/Rosento.tsx" [label=<Rosento.tsx> tooltip="Rosento.tsx" URL="components/Producers/Rosento/Rosento.tsx" fillcolor="#bbfeff"] } } }
+    "components/Producers/Rosento/Rosento.tsx" -> "components/Producers/Rosento/MovieRosento.tsx"
+    "components/Producers/Rosento/Rosento.tsx" -> "node_modules/next" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" "components/Question.tsx" [label=<Question.tsx> tooltip="Question.tsx" URL="components/Question.tsx" fillcolor="#bbfeff"] }
+    "components/Question.tsx" -> "lib/getBase64.ts"
+    "components/Question.tsx" -> "node_modules/next" [penwidth="1.0"]
+    "components/Question.tsx" -> "node_modules/react-icons" [penwidth="1.0"]
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/Services" {label="Services" "components/Services/ServiceItem.tsx" [label=<ServiceItem.tsx> tooltip="ServiceItem.tsx" URL="components/Services/ServiceItem.tsx" fillcolor="#bbfeff"] } }
+    subgraph "cluster_components" {label="components" subgraph "cluster_components/Services" {label="Services" "components/Services/Services.tsx" [label=<Services.tsx> tooltip="Services.tsx" URL="components/Services/Services.tsx" fillcolor="#bbfeff"] } }
+    "components/Services/Services.tsx" -> "components/Services/ServiceItem.tsx"
+    "components/Services/Services.tsx" -> "fs" [style="dashed" penwidth="1.0"]
+    "components/Services/Services.tsx" -> "path" [style="dashed" penwidth="1.0"]
+    subgraph "cluster_components" {label="components" "components/Testimonials.tsx" [label=<Testimonials.tsx> tooltip="Testimonials.tsx" URL="components/Testimonials.tsx" fillcolor="#bbfeff"] }
+    "components/Testimonials.tsx" -> "node_modules/next" [penwidth="1.0"]
+    "fs" [label=<fs> tooltip="fs" URL="https://nodejs.org/api/fs.html" color="grey" fontcolor="grey"]
+    subgraph "cluster_fs" {label="fs" "fs/promises" [label=<promises> tooltip="promises" URL="https://nodejs.org/api/fs.html" color="grey" fontcolor="grey"] }
+    subgraph "cluster_lib" {label="lib" "lib/getBase64.ts" [label=<getBase64.ts> tooltip="getBase64.ts" URL="lib/getBase64.ts" fillcolor="#ddfeff"] }
+    subgraph "cluster_model" {label="model" "model/formShema.ts" [label=<formShema.ts> tooltip="formShema.ts" URL="model/formShema.ts" fillcolor="#ddfeff"] }
+    "model/formShema.ts" -> "node_modules/zod" [penwidth="1.0"]
+    "net" [label=<net> tooltip="net" URL="https://nodejs.org/api/net.html" color="grey" fontcolor="grey"]
+    "next-env.d.ts" [label=<next-env.d.ts> tooltip="next-env.d.ts" URL="next-env.d.ts" fillcolor="#ccffcc"]
+    "next.config.js" [label=<next.config.js> tooltip="no-orphans" URL="next.config.js" fillcolor="#ccffcc" fontcolor="orange" color="orange"]
+    subgraph "cluster_node_modules" {label="node_modules" subgraph "cluster_node_modules/@hookform" {label="@hookform" "node_modules/@hookform/resolvers" [label=<resolvers> tooltip="resolvers" URL="https://www.npmjs.com/package/@hookform/resolvers" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] } }
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/next" [label=<next> tooltip="next" URL="https://www.npmjs.com/package/next" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/react" [label=<react> tooltip="react" URL="https://www.npmjs.com/package/react" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/react-burger-menu" [label=<react-burger-menu> tooltip="react-burger-menu" URL="https://www.npmjs.com/package/react-burger-menu" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/react-hook-form" [label=<react-hook-form> tooltip="react-hook-form" URL="https://www.npmjs.com/package/react-hook-form" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/react-icons" [label=<react-icons> tooltip="react-icons" URL="https://www.npmjs.com/package/react-icons" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/react-youtube" [label=<react-youtube> tooltip="react-youtube" URL="https://www.npmjs.com/package/react-youtube" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/sharp" [label=<sharp> tooltip="sharp" URL="https://www.npmjs.com/package/sharp" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/zod" [label=<zod> tooltip="zod" URL="https://www.npmjs.com/package/zod" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+    "path" [label=<path> tooltip="path" URL="https://nodejs.org/api/path.html" color="grey" fontcolor="grey"]
+    subgraph "cluster_public" {label="public" subgraph "cluster_public/images" {label="images" "public/images/Gree_logo.svg" [label=<Gree_logo.svg> tooltip="Gree_logo.svg" URL="public/images/Gree_logo.svg" ] } }
+    subgraph "cluster_public" {label="public" subgraph "cluster_public/images" {label="images" "public/images/Haier_logo.svg" [label=<Haier_logo.svg> tooltip="Haier_logo.svg" URL="public/images/Haier_logo.svg" ] } }
+    subgraph "cluster_public" {label="public" subgraph "cluster_public/images" {label="images" "public/images/Heiko_logo.svg" [label=<Heiko_logo.svg> tooltip="Heiko_logo.svg" URL="public/images/Heiko_logo.svg" ] } }
+    subgraph "cluster_public" {label="public" subgraph "cluster_public/images" {label="images" "public/images/Neoheat_logo.svg" [label=<Neoheat_logo.svg> tooltip="Neoheat_logo.svg" URL="public/images/Neoheat_logo.svg" ] } }
+    subgraph "cluster_public" {label="public" subgraph "cluster_public/images" {label="images" "public/images/Panasonic_logo.svg" [label=<Panasonic_logo.svg> tooltip="Panasonic_logo.svg" URL="public/images/Panasonic_logo.svg" ] } }
+    subgraph "cluster_public" {label="public" subgraph "cluster_public/images" {label="images" "public/images/Rotenso_logo.svg" [label=<Rotenso_logo.svg> tooltip="Rotenso_logo.svg" URL="public/images/Rotenso_logo.svg" ] } }
+    subgraph "cluster_public" {label="public" subgraph "cluster_public/images" {label="images" "public/images/YouTube_play_button_icon.svg" [label=<YouTube_play_button_icon.svg> tooltip="YouTube_play_button_icon.svg" URL="public/images/YouTube_play_button_icon.svg" ] } }
+    subgraph "cluster_styles" {label="styles" "styles/main.scss" [label=<main.scss> tooltip="main.scss" URL="styles/main.scss" ] }
+    "tty" [label=<tty> tooltip="tty" URL="https://nodejs.org/api/tty.html" color="grey" fontcolor="grey"]
+    "url" [label=<url> tooltip="url" URL="https://nodejs.org/api/url.html" color="grey" fontcolor="grey"]
+    "util" [label=<util> tooltip="util" URL="https://nodejs.org/api/util.html" color="grey" fontcolor="grey"]
+}
